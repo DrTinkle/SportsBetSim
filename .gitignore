@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 
+# team .json files
+.data/match_history.json
+.data/schedules.json
+.data/team_history.json
+.data/teams.json
