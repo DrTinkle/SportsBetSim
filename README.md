@@ -1,3 +1,6 @@
+![Main screenshot](./screenshots/screenshot1.jpg)
+
+
 # SportsBetSim - A Betting Game Simulator (Work in Progress)
 
 SportsBetSim is a **betting game simulator** that generates random sports teams, calculates match results, and allows users to place simulated bets on upcoming games. This project is currently in development, and features are still being added and refined.
