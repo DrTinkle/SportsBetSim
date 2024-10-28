@@ -1,0 +1,223 @@
+/* Overlay for the modal */
+.betting-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Betting modal container with fixed width */
+.betting-modal {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  width: 60%;
+  max-height: 85%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.4);
+  color: #ffcccc;
+}
+
+/* Close button for the modal */
+.betting-modal-close-button {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ff6666;
+  transition: color 0.3s ease;
+}
+
+.betting-modal-close-button:hover {
+  color: #ff4d4d;
+}
+
+/* Main content area of the modal */
+.betting-modal-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Betting grid container */
+.betting-grid-container {
+  width: 65%;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Betting grid styles */
+.betting-grid {
+  margin: 10px;
+}
+
+.sport-section {
+  margin-bottom: 25px;
+}
+
+.sport-section h3 {
+  text-align: left;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #ff6666;
+}
+
+/* Match grid (table) styles */
+.match-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #ffcccc;
+}
+
+.match-grid th,
+.match-grid td {
+  padding: 10px;
+  border: 1px solid #4d0000;
+}
+
+.match-grid th {
+  background-color: #330000;
+  font-weight: bold;
+  color: #ff9999;
+  text-transform: uppercase;
+}
+
+.match-grid td {
+  background-color: #1a1a1a;
+}
+
+/* Button styles for odds */
+.match-grid button {
+  width: 85%;
+  padding: 10px;
+  background-color: #660000;
+  border: 1px solid #990000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.9rem;
+  color: #ffcccc;
+}
+
+.match-grid button:hover {
+  background-color: #800000;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+.match-grid button.selected-bet {
+  background-color: #b30000;
+  color: white;
+  border-color: #ff3333;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+}
+
+/* No matches available text */
+.no-matches {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Bet ticket container */
+.bet-ticket-container {
+  width: 30%;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+/* Bet ticket styling */
+.bet-ticket {
+  background-color: #f0ffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
+  position: relative;
+  color: #000000;
+}
+
+.bet-ticket h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+/* Bet ticket list */
+.bet-ticket-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual bet ticket item */
+.bet-ticket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #4d0000;
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+.bet-ticket-item:last-child {
+  border-bottom: none;
+}
+
+/* Remove bet button */
+.remove-bet-button {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-bet-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Footer of bet ticket */
+.bet-ticket-footer {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff6666;
+}
+
+.bet-ticket-footer p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Scrollbar styling for grid and ticket */
+.betting-grid-container::-webkit-scrollbar,
+.bet-ticket-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.betting-grid-container::-webkit-scrollbar-thumb,
+.bet-ticket-container::-webkit-scrollbar-thumb {
+  background-color: #990000;
+  border-radius: 10px;
+}
+
+.betting-grid-container::-webkit-scrollbar-thumb:hover,
+.bet-ticket-container::-webkit-scrollbar-thumb:hover {
+  background-color: #b30000;
+}

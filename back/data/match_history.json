@@ -1,0 +1,5300 @@
+{
+  "boxing": {
+    "matchups": [
+      {
+        "teamA": "Raging Bull",
+        "teamB": "Lightning Strike",
+        "matchId": 283,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "Raging Bull",
+        "order": 1
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Brick Wall",
+        "matchId": 198,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Brick Wall",
+        "order": 2
+      },
+      {
+        "teamA": "Red Fury",
+        "teamB": "The Beast",
+        "matchId": 378,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "Red Fury",
+        "order": 3
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "Shadow Fury",
+        "matchId": 314,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "Shadow Fury",
+        "order": 4
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Raging Bull",
+        "matchId": 213,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 5
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "The Beast",
+        "matchId": 324,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 6
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "The Cobra",
+        "matchId": 330,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "The Hurricane",
+        "order": 7
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "Shadow Boxer",
+        "matchId": 245,
+        "scoreTeamA": 36,
+        "scoreTeamB": 36,
+        "winner": "draw",
+        "order": 8
+      },
+      {
+        "teamA": "Shadow Fury",
+        "teamB": "Red Fury",
+        "matchId": 379,
+        "scoreTeamA": 39,
+        "scoreTeamB": 35,
+        "winner": "Shadow Fury",
+        "order": 9
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "The Predator",
+        "matchId": 311,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "The Predator",
+        "order": 10
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Steel Jaw",
+        "matchId": 210,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "Steel Jaw",
+        "order": 11
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "Golden Gloves",
+        "matchId": 252,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "Golden Gloves",
+        "order": 12
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "Red Fury",
+        "matchId": 258,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "Red Fury",
+        "order": 13
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "Lightning Strike",
+        "matchId": 296,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "Lightning Strike",
+        "order": 14
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "Red Fury",
+        "matchId": 350,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 15
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "The Tornado",
+        "matchId": 268,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 16
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "Red Fury",
+        "matchId": 323,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "Brick Wall",
+        "order": 17
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Iron Will",
+        "matchId": 200,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "Iron Will",
+        "order": 18
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "Bone Crusher",
+        "matchId": 298,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Bone Crusher",
+        "order": 19
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "The Phantom",
+        "matchId": 307,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "The Phantom",
+        "order": 20
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "The Viper",
+        "matchId": 257,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "The Predator",
+        "order": 21
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "The Predator",
+        "matchId": 349,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "The Predator",
+        "order": 22
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "The Tornado",
+        "matchId": 237,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "Steel Jaw",
+        "order": 23
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "Shadow Fury",
+        "matchId": 335,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "The Hurricane",
+        "order": 24
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "Lightning Strike",
+        "matchId": 269,
+        "scoreTeamA": 40,
+        "scoreTeamB": 34,
+        "winner": "Shadow Boxer",
+        "order": 25
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "Iron Fist",
+        "matchId": 204,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "Iron Fist",
+        "order": 26
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "Bone Crusher",
+        "matchId": 240,
+        "scoreTeamA": 36,
+        "scoreTeamB": 36,
+        "winner": "draw",
+        "order": 27
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "The Phantom",
+        "matchId": 305,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 28
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "Brick Wall",
+        "matchId": 321,
+        "scoreTeamA": 34,
+        "scoreTeamB": 40,
+        "winner": "Brick Wall",
+        "order": 29
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "Red Fury",
+        "matchId": 342,
+        "scoreTeamA": 39,
+        "scoreTeamB": 35,
+        "winner": "Iron Will",
+        "order": 30
+      },
+      {
+        "teamA": "Shadow Fury",
+        "teamB": "Golden Gloves",
+        "matchId": 352,
+        "scoreTeamA": 33,
+        "scoreTeamB": 40,
+        "winner": "Golden Gloves",
+        "order": 31
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "Knockout King",
+        "matchId": 299,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "The Predator",
+        "order": 32
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "The Viper",
+        "matchId": 193,
+        "scoreTeamA": 38,
+        "scoreTeamB": 34,
+        "winner": "Iron Fist",
+        "order": 33
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "The Phantom",
+        "matchId": 263,
+        "scoreTeamA": 34,
+        "scoreTeamB": 40,
+        "winner": "The Phantom",
+        "order": 34
+      },
+      {
+        "teamA": "Red Fury",
+        "teamB": "The Hurricane",
+        "matchId": 333,
+        "scoreTeamA": 40,
+        "scoreTeamB": 33,
+        "winner": "Red Fury",
+        "order": 35
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "The Predator",
+        "matchId": 356,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "The Tornado",
+        "order": 36
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "Shadow Fury",
+        "matchId": 275,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "Shadow Boxer",
+        "order": 37
+      },
+      {
+        "teamA": "The Beast",
+        "teamB": "Thunder Punch",
+        "matchId": 226,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "The Beast",
+        "order": 38
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "The Cobra",
+        "matchId": 270,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "Shadow Boxer",
+        "order": 39
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Golden Gloves",
+        "matchId": 219,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "Thunder Punch",
+        "order": 40
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "The Viper",
+        "matchId": 255,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "The Viper",
+        "order": 41
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "Bone Crusher",
+        "matchId": 348,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "Bone Crusher",
+        "order": 42
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Shadow Boxer",
+        "matchId": 194,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 43
+      },
+      {
+        "teamA": "Red Fury",
+        "teamB": "Iron Fist",
+        "matchId": 207,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "Red Fury",
+        "order": 44
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "The Cobra",
+        "matchId": 309,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "The Phantom",
+        "order": 45
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "The Tornado",
+        "matchId": 282,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "The Tornado",
+        "order": 46
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "Knockout King",
+        "matchId": 247,
+        "scoreTeamA": 38,
+        "scoreTeamB": 35,
+        "winner": "The Viper",
+        "order": 47
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "The Predator",
+        "matchId": 322,
+        "scoreTeamA": 40,
+        "scoreTeamB": 32,
+        "winner": "Brick Wall",
+        "order": 48
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "The Hurricane",
+        "matchId": 199,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 49
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "Red Fury",
+        "matchId": 312,
+        "scoreTeamA": 34,
+        "scoreTeamB": 40,
+        "winner": "Red Fury",
+        "order": 50
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "Iron Will",
+        "matchId": 341,
+        "scoreTeamA": 35,
+        "scoreTeamB": 39,
+        "winner": "Iron Will",
+        "order": 51
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "Thunder Punch",
+        "matchId": 223,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "Bone Crusher",
+        "order": 52
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "Brick Wall",
+        "matchId": 318,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "Brick Wall",
+        "order": 53
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "The Phantom",
+        "matchId": 290,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "The Phantom",
+        "order": 54
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "Iron Will",
+        "matchId": 326,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "The Hurricane",
+        "order": 55
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "The Hurricane",
+        "matchId": 265,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "Shadow Boxer",
+        "order": 56
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "Bone Crusher",
+        "matchId": 340,
+        "scoreTeamA": 35,
+        "scoreTeamB": 39,
+        "winner": "Bone Crusher",
+        "order": 57
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "Brick Wall",
+        "matchId": 264,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Brick Wall",
+        "order": 58
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "Lightning Strike",
+        "matchId": 346,
+        "scoreTeamA": 38,
+        "scoreTeamB": 35,
+        "winner": "Golden Gloves",
+        "order": 59
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "The Tornado",
+        "matchId": 253,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "The Viper",
+        "order": 60
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "The Cobra",
+        "matchId": 320,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "The Cobra",
+        "order": 61
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Golden Gloves",
+        "matchId": 201,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "Iron Fist",
+        "order": 62
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "Shadow Fury",
+        "matchId": 370,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "The Cobra",
+        "order": 63
+      },
+      {
+        "teamA": "Red Fury",
+        "teamB": "Shadow Boxer",
+        "matchId": 273,
+        "scoreTeamA": 38,
+        "scoreTeamB": 35,
+        "winner": "Red Fury",
+        "order": 64
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "Brick Wall",
+        "matchId": 303,
+        "scoreTeamA": 34,
+        "scoreTeamB": 40,
+        "winner": "Brick Wall",
+        "order": 65
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "Golden Gloves",
+        "matchId": 294,
+        "scoreTeamA": 35,
+        "scoreTeamB": 40,
+        "winner": "Golden Gloves",
+        "order": 66
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "Raging Bull",
+        "matchId": 285,
+        "scoreTeamA": 35,
+        "scoreTeamB": 40,
+        "winner": "Raging Bull",
+        "order": 67
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "Iron Will",
+        "matchId": 251,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "Iron Will",
+        "order": 68
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "The Viper",
+        "matchId": 249,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 69
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "The Beast",
+        "matchId": 376,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "The Beast",
+        "order": 70
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "Thunder Punch",
+        "matchId": 221,
+        "scoreTeamA": 34,
+        "scoreTeamB": 38,
+        "winner": "Thunder Punch",
+        "order": 71
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "The Hurricane",
+        "matchId": 279,
+        "scoreTeamA": 34,
+        "scoreTeamB": 38,
+        "winner": "The Hurricane",
+        "order": 72
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "Knockout King",
+        "matchId": 295,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Knockout King",
+        "order": 73
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Steel Jaw",
+        "matchId": 192,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "Iron Fist",
+        "order": 74
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Knockout King",
+        "matchId": 214,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 75
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "The Cobra",
+        "matchId": 239,
+        "scoreTeamA": 40,
+        "scoreTeamB": 34,
+        "winner": "Steel Jaw",
+        "order": 76
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "Shadow Fury",
+        "matchId": 377,
+        "scoreTeamA": 33,
+        "scoreTeamB": 40,
+        "winner": "Shadow Fury",
+        "order": 77
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "The Predator",
+        "matchId": 371,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 78
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "Shadow Boxer",
+        "matchId": 229,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 79
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "The Viper",
+        "matchId": 250,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 80
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "Shadow Fury",
+        "matchId": 302,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "Shadow Fury",
+        "order": 81
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "Red Fury",
+        "matchId": 372,
+        "scoreTeamA": 39,
+        "scoreTeamB": 37,
+        "winner": "Bone Crusher",
+        "order": 82
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "Knockout King",
+        "matchId": 276,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "Knockout King",
+        "order": 83
+      },
+      {
+        "teamA": "Red Fury",
+        "teamB": "Raging Bull",
+        "matchId": 287,
+        "scoreTeamA": 34,
+        "scoreTeamB": 40,
+        "winner": "Raging Bull",
+        "order": 84
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "The Viper",
+        "matchId": 254,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "The Viper",
+        "order": 85
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "The Predator",
+        "matchId": 272,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 86
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "Bone Crusher",
+        "matchId": 361,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "Lightning Strike",
+        "order": 87
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "The Beast",
+        "matchId": 369,
+        "scoreTeamA": 39,
+        "scoreTeamB": 35,
+        "winner": "The Cobra",
+        "order": 88
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "The Tornado",
+        "matchId": 220,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 89
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "The Cobra",
+        "matchId": 297,
+        "scoreTeamA": 32,
+        "scoreTeamB": 40,
+        "winner": "The Cobra",
+        "order": 90
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "The Tornado",
+        "matchId": 328,
+        "scoreTeamA": 35,
+        "scoreTeamB": 40,
+        "winner": "The Tornado",
+        "order": 91
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "The Cobra",
+        "matchId": 347,
+        "scoreTeamA": 39,
+        "scoreTeamB": 34,
+        "winner": "Golden Gloves",
+        "order": 92
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "Lightning Strike",
+        "matchId": 353,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Lightning Strike",
+        "order": 93
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "The Hurricane",
+        "matchId": 332,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "The Hurricane",
+        "order": 94
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "Shadow Fury",
+        "matchId": 344,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 95
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "The Beast",
+        "matchId": 334,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "The Beast",
+        "order": 96
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "Shadow Fury",
+        "matchId": 325,
+        "scoreTeamA": 38,
+        "scoreTeamB": 38,
+        "winner": "draw",
+        "order": 97
+      },
+      {
+        "teamA": "Red Fury",
+        "teamB": "Knockout King",
+        "matchId": 300,
+        "scoreTeamA": 39,
+        "scoreTeamB": 35,
+        "winner": "Red Fury",
+        "order": 98
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Shadow Boxer",
+        "matchId": 212,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 99
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "The Phantom",
+        "matchId": 277,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 100
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "Golden Gloves",
+        "matchId": 327,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "Golden Gloves",
+        "order": 101
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "Shadow Fury",
+        "matchId": 359,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "Shadow Fury",
+        "order": 102
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Brick Wall",
+        "matchId": 216,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "Thunder Punch",
+        "order": 103
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "The Predator",
+        "matchId": 286,
+        "scoreTeamA": 40,
+        "scoreTeamB": 34,
+        "winner": "Raging Bull",
+        "order": 104
+      },
+      {
+        "teamA": "The Beast",
+        "teamB": "Steel Jaw",
+        "matchId": 243,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "Steel Jaw",
+        "order": 105
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "The Viper",
+        "matchId": 228,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 106
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "The Beast",
+        "matchId": 259,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "The Viper",
+        "order": 107
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "Shadow Fury",
+        "matchId": 365,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "Shadow Fury",
+        "order": 108
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "Golden Gloves",
+        "matchId": 317,
+        "scoreTeamA": 40,
+        "scoreTeamB": 34,
+        "winner": "Brick Wall",
+        "order": 109
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "Thunder Punch",
+        "matchId": 222,
+        "scoreTeamA": 33,
+        "scoreTeamB": 40,
+        "winner": "Thunder Punch",
+        "order": 110
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "Iron Will",
+        "matchId": 266,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "Shadow Boxer",
+        "order": 111
+      },
+      {
+        "teamA": "The Beast",
+        "teamB": "Raging Bull",
+        "matchId": 288,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Raging Bull",
+        "order": 112
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "The Phantom",
+        "matchId": 197,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "Iron Fist",
+        "order": 113
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "Shadow Fury",
+        "matchId": 260,
+        "scoreTeamA": 37,
+        "scoreTeamB": 36,
+        "winner": "The Viper",
+        "order": 114
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "Brick Wall",
+        "matchId": 316,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 115
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "The Cobra",
+        "matchId": 339,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "The Cobra",
+        "order": 116
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "Golden Gloves",
+        "matchId": 306,
+        "scoreTeamA": 40,
+        "scoreTeamB": 36,
+        "winner": "The Phantom",
+        "order": 117
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "The Hurricane",
+        "matchId": 292,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 118
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "The Beast",
+        "matchId": 373,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "The Beast",
+        "order": 119
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "Iron Will",
+        "matchId": 293,
+        "scoreTeamA": 40,
+        "scoreTeamB": 34,
+        "winner": "Knockout King",
+        "order": 120
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "Bone Crusher",
+        "matchId": 331,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "The Hurricane",
+        "order": 121
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "Shadow Fury",
+        "matchId": 374,
+        "scoreTeamA": 34,
+        "scoreTeamB": 39,
+        "winner": "Shadow Fury",
+        "order": 122
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "The Beast",
+        "matchId": 343,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "The Beast",
+        "order": 123
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "Knockout King",
+        "matchId": 231,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 124
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "The Hurricane",
+        "matchId": 304,
+        "scoreTeamA": 34,
+        "scoreTeamB": 40,
+        "winner": "The Hurricane",
+        "order": 125
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "The Viper",
+        "matchId": 211,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "The Viper",
+        "order": 126
+      },
+      {
+        "teamA": "Shadow Fury",
+        "teamB": "Raging Bull",
+        "matchId": 289,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "Shadow Fury",
+        "order": 127
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "The Beast",
+        "matchId": 358,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "The Beast",
+        "order": 128
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Raging Bull",
+        "matchId": 195,
+        "scoreTeamA": 38,
+        "scoreTeamB": 38,
+        "winner": "draw",
+        "order": 129
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "Knockout King",
+        "matchId": 262,
+        "scoreTeamA": 40,
+        "scoreTeamB": 34,
+        "winner": "Shadow Boxer",
+        "order": 130
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "The Predator",
+        "matchId": 367,
+        "scoreTeamA": 39,
+        "scoreTeamB": 34,
+        "winner": "The Cobra",
+        "order": 131
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "Bone Crusher",
+        "matchId": 256,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "The Viper",
+        "order": 132
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "Thunder Punch",
+        "matchId": 224,
+        "scoreTeamA": 40,
+        "scoreTeamB": 33,
+        "winner": "The Predator",
+        "order": 133
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "The Cobra",
+        "matchId": 284,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "The Cobra",
+        "order": 134
+      },
+      {
+        "teamA": "The Beast",
+        "teamB": "Shadow Fury",
+        "matchId": 380,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 135
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "Bone Crusher",
+        "matchId": 366,
+        "scoreTeamA": 38,
+        "scoreTeamB": 37,
+        "winner": "The Cobra",
+        "order": 136
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "The Cobra",
+        "matchId": 360,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "The Cobra",
+        "order": 137
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "The Tornado",
+        "matchId": 354,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "The Cobra",
+        "order": 138
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "Iron Will",
+        "matchId": 336,
+        "scoreTeamA": 34,
+        "scoreTeamB": 40,
+        "winner": "Iron Will",
+        "order": 139
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "The Beast",
+        "matchId": 351,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "Golden Gloves",
+        "order": 140
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "Lightning Strike",
+        "matchId": 308,
+        "scoreTeamA": 39,
+        "scoreTeamB": 34,
+        "winner": "The Phantom",
+        "order": 141
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "The Phantom",
+        "matchId": 248,
+        "scoreTeamA": 37,
+        "scoreTeamB": 39,
+        "winner": "The Phantom",
+        "order": 142
+      },
+      {
+        "teamA": "Red Fury",
+        "teamB": "Steel Jaw",
+        "matchId": 242,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 143
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "Steel Jaw",
+        "matchId": 238,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 144
+      },
+      {
+        "teamA": "The Viper",
+        "teamB": "Raging Bull",
+        "matchId": 246,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "The Viper",
+        "order": 145
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "Brick Wall",
+        "matchId": 233,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 146
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "The Beast",
+        "matchId": 301,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "Knockout King",
+        "order": 147
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "Bone Crusher",
+        "matchId": 355,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Bone Crusher",
+        "order": 148
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "Lightning Strike",
+        "matchId": 338,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "Lightning Strike",
+        "order": 149
+      },
+      {
+        "teamA": "The Beast",
+        "teamB": "Iron Fist",
+        "matchId": 208,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "Iron Fist",
+        "order": 150
+      },
+      {
+        "teamA": "The Beast",
+        "teamB": "Shadow Boxer",
+        "matchId": 274,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "The Beast",
+        "order": 151
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "The Phantom",
+        "matchId": 215,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 152
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "Iron Fist",
+        "matchId": 205,
+        "scoreTeamA": 39,
+        "scoreTeamB": 35,
+        "winner": "Bone Crusher",
+        "order": 153
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "The Tornado",
+        "matchId": 202,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "The Tornado",
+        "order": 154
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "Iron Will",
+        "matchId": 280,
+        "scoreTeamA": 34,
+        "scoreTeamB": 38,
+        "winner": "Iron Will",
+        "order": 155
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "Iron Will",
+        "matchId": 235,
+        "scoreTeamA": 40,
+        "scoreTeamB": 36,
+        "winner": "Steel Jaw",
+        "order": 156
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "Raging Bull",
+        "matchId": 230,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "Raging Bull",
+        "order": 157
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "The Hurricane",
+        "matchId": 329,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "Lightning Strike",
+        "order": 158
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "Brick Wall",
+        "matchId": 278,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "Raging Bull",
+        "order": 159
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "The Tornado",
+        "matchId": 345,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "The Tornado",
+        "order": 160
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "The Predator",
+        "matchId": 362,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 161
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Red Fury",
+        "matchId": 225,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "Thunder Punch",
+        "order": 162
+      },
+      {
+        "teamA": "The Cobra",
+        "teamB": "Red Fury",
+        "matchId": 368,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Red Fury",
+        "order": 163
+      },
+      {
+        "teamA": "Bone Crusher",
+        "teamB": "Shadow Boxer",
+        "matchId": 271,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "Shadow Boxer",
+        "order": 164
+      },
+      {
+        "teamA": "Shadow Boxer",
+        "teamB": "Raging Bull",
+        "matchId": 261,
+        "scoreTeamA": 40,
+        "scoreTeamB": 34,
+        "winner": "Shadow Boxer",
+        "order": 165
+      },
+      {
+        "teamA": "Shadow Fury",
+        "teamB": "Steel Jaw",
+        "matchId": 244,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "Steel Jaw",
+        "order": 166
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Thunder Punch",
+        "matchId": 191,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 167
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "The Hurricane",
+        "matchId": 234,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "The Hurricane",
+        "order": 168
+      },
+      {
+        "teamA": "Raging Bull",
+        "teamB": "Golden Gloves",
+        "matchId": 281,
+        "scoreTeamA": 38,
+        "scoreTeamB": 35,
+        "winner": "Raging Bull",
+        "order": 169
+      },
+      {
+        "teamA": "Shadow Fury",
+        "teamB": "Thunder Punch",
+        "matchId": 227,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 170
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "The Tornado",
+        "matchId": 337,
+        "scoreTeamA": 40,
+        "scoreTeamB": 35,
+        "winner": "Iron Will",
+        "order": 171
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "Lightning Strike",
+        "matchId": 319,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "Lightning Strike",
+        "order": 172
+      },
+      {
+        "teamA": "The Hurricane",
+        "teamB": "Thunder Punch",
+        "matchId": 217,
+        "scoreTeamA": 40,
+        "scoreTeamB": 34,
+        "winner": "The Hurricane",
+        "order": 173
+      },
+      {
+        "teamA": "Brick Wall",
+        "teamB": "The Hurricane",
+        "matchId": 315,
+        "scoreTeamA": 36,
+        "scoreTeamB": 37,
+        "winner": "The Hurricane",
+        "order": 174
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "The Beast",
+        "matchId": 313,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "The Beast",
+        "order": 175
+      },
+      {
+        "teamA": "The Phantom",
+        "teamB": "Bone Crusher",
+        "matchId": 310,
+        "scoreTeamA": 38,
+        "scoreTeamB": 38,
+        "winner": "draw",
+        "order": 176
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Knockout King",
+        "matchId": 196,
+        "scoreTeamA": 38,
+        "scoreTeamB": 34,
+        "winner": "Iron Fist",
+        "order": 177
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "Lightning Strike",
+        "matchId": 203,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 178
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "Steel Jaw",
+        "matchId": 241,
+        "scoreTeamA": 39,
+        "scoreTeamB": 37,
+        "winner": "The Predator",
+        "order": 179
+      },
+      {
+        "teamA": "The Predator",
+        "teamB": "Red Fury",
+        "matchId": 375,
+        "scoreTeamA": 39,
+        "scoreTeamB": 35,
+        "winner": "The Predator",
+        "order": 180
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "Red Fury",
+        "matchId": 363,
+        "scoreTeamA": 37,
+        "scoreTeamB": 37,
+        "winner": "draw",
+        "order": 181
+      },
+      {
+        "teamA": "Lightning Strike",
+        "teamB": "The Beast",
+        "matchId": 364,
+        "scoreTeamA": 38,
+        "scoreTeamB": 35,
+        "winner": "Lightning Strike",
+        "order": 182
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "Shadow Boxer",
+        "matchId": 267,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "Shadow Boxer",
+        "order": 183
+      },
+      {
+        "teamA": "The Tornado",
+        "teamB": "Red Fury",
+        "matchId": 357,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "Red Fury",
+        "order": 184
+      },
+      {
+        "teamA": "Iron Fist",
+        "teamB": "The Predator",
+        "matchId": 206,
+        "scoreTeamA": 37,
+        "scoreTeamB": 38,
+        "winner": "The Predator",
+        "order": 185
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "Golden Gloves",
+        "matchId": 236,
+        "scoreTeamA": 38,
+        "scoreTeamB": 36,
+        "winner": "Steel Jaw",
+        "order": 186
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Iron Will",
+        "matchId": 218,
+        "scoreTeamA": 35,
+        "scoreTeamB": 38,
+        "winner": "Iron Will",
+        "order": 187
+      },
+      {
+        "teamA": "Steel Jaw",
+        "teamB": "The Phantom",
+        "matchId": 232,
+        "scoreTeamA": 32,
+        "scoreTeamB": 40,
+        "winner": "The Phantom",
+        "order": 188
+      },
+      {
+        "teamA": "Shadow Fury",
+        "teamB": "Iron Fist",
+        "matchId": 209,
+        "scoreTeamA": 39,
+        "scoreTeamB": 35,
+        "winner": "Shadow Fury",
+        "order": 189
+      },
+      {
+        "teamA": "Knockout King",
+        "teamB": "Brick Wall",
+        "matchId": 291,
+        "scoreTeamA": 36,
+        "scoreTeamB": 39,
+        "winner": "Brick Wall",
+        "order": 190
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "Shadow Fury",
+        "matchId": 154,
+        "scoreTeamA": 39,
+        "scoreTeamB": 36,
+        "winner": "Iron Will",
+        "order": 191,
+        "oddsTeamA": "2.09",
+        "oddsDraw": "27.10",
+        "oddsTeamB": "2.07",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Golden Gloves",
+        "teamB": "The Beast",
+        "matchId": 161,
+        "scoreTeamA": 38,
+        "scoreTeamB": 35,
+        "winner": "Golden Gloves",
+        "order": 192,
+        "oddsTeamA": "1.93",
+        "oddsDraw": "206.53",
+        "oddsTeamB": "2.09",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Thunder Punch",
+        "teamB": "Shadow Fury",
+        "matchId": 37,
+        "scoreTeamA": 33,
+        "scoreTeamB": 40,
+        "winner": "Shadow Fury",
+        "order": 193,
+        "oddsTeamA": "2.10",
+        "oddsDraw": "25.02",
+        "oddsTeamB": "2.06",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Iron Will",
+        "teamB": "Lightning Strike",
+        "matchId": 148,
+        "scoreTeamA": 36,
+        "scoreTeamB": 38,
+        "winner": "Lightning Strike",
+        "order": 194,
+        "oddsTeamA": "2.11",
+        "oddsDraw": "127.62",
+        "oddsTeamB": "1.93",
+        "processedDuringGame": true
+      }
+    ]
+  },
+  "hockey": {
+    "matchups": [
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Glacial Guardians",
+        "matchId": 640,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Glacial Guardians",
+        "order": 1
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Glacial Guardians",
+        "matchId": 724,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Ice Breakers",
+        "order": 2
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Frostbite Foxes",
+        "matchId": 746,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "The Chill",
+        "order": 3
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Cold Crushers",
+        "matchId": 604,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Frozen Warriors",
+        "order": 4
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "Cold Crushers",
+        "matchId": 736,
+        "scoreTeamA": 2,
+        "scoreTeamB": 4,
+        "winner": "Cold Crushers",
+        "order": 5
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Glacier Hawks",
+        "matchId": 576,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Ice Titans",
+        "order": 6
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "Winter Storm",
+        "matchId": 733,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Winter Storm",
+        "order": 7
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "Frozen Flames",
+        "matchId": 698,
+        "scoreTeamA": 4,
+        "scoreTeamB": 2,
+        "winner": "Polar Panthers",
+        "order": 8
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Northern Lights",
+        "matchId": 612,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 9
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Frozen Warriors",
+        "matchId": 601,
+        "scoreTeamA": 4,
+        "scoreTeamB": 0,
+        "winner": "Winter Storm",
+        "order": 10
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "Snow Owls",
+        "matchId": 703,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Snow Owls",
+        "order": 11
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Ice Breakers",
+        "matchId": 580,
+        "scoreTeamA": 3,
+        "scoreTeamB": 4,
+        "winner": "Ice Breakers",
+        "order": 12
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "Avalanche Riders",
+        "matchId": 645,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Avalanche Riders",
+        "order": 13
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Frostbite Foxes",
+        "matchId": 603,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Frozen Warriors",
+        "order": 14
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Glacial Guardians",
+        "matchId": 732,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Glacial Guardians",
+        "order": 15
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Northern Lights",
+        "matchId": 657,
+        "scoreTeamA": 4,
+        "scoreTeamB": 2,
+        "winner": "Arctic Wolves",
+        "order": 16
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Winter Storm",
+        "matchId": 718,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Ice Breakers",
+        "order": 17
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Ice Breakers",
+        "matchId": 631,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 18
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Frozen Flames",
+        "matchId": 735,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Frostbite Foxes",
+        "order": 19
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "Arctic Wolves",
+        "matchId": 641,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Arctic Wolves",
+        "order": 20
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Glacial Guardians",
+        "matchId": 759,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Snow Owls",
+        "order": 21
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Northern Lights",
+        "matchId": 670,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Glacier Hawks",
+        "order": 22
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Arctic Wolves",
+        "matchId": 575,
+        "scoreTeamA": 1,
+        "scoreTeamB": 4,
+        "winner": "Arctic Wolves",
+        "order": 23
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "The Chill",
+        "matchId": 602,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "The Chill",
+        "order": 24
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Snow Owls",
+        "matchId": 722,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Ice Breakers",
+        "order": 25
+      },
+      {
+        "teamA": "Glacial Guardians",
+        "teamB": "Polar Panthers",
+        "matchId": 705,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 26
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Ice Predators",
+        "matchId": 681,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Ice Predators",
+        "order": 27
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Glacier Hawks",
+        "matchId": 594,
+        "scoreTeamA": 3,
+        "scoreTeamB": 4,
+        "winner": "Glacier Hawks",
+        "order": 28
+      },
+      {
+        "teamA": "Glacial Guardians",
+        "teamB": "Ice Titans",
+        "matchId": 589,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Glacial Guardians",
+        "order": 29
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Frozen Warriors",
+        "matchId": 605,
+        "scoreTeamA": 4,
+        "scoreTeamB": 3,
+        "winner": "Snow Owls",
+        "order": 30
+      },
+      {
+        "teamA": "Ice Predators",
+        "teamB": "Frost Giants",
+        "matchId": 654,
+        "scoreTeamA": 4,
+        "scoreTeamB": 4,
+        "winner": "draw",
+        "order": 31
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "Ice Breakers",
+        "matchId": 706,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Avalanche Riders",
+        "order": 32
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Frostbite Foxes",
+        "matchId": 720,
+        "scoreTeamA": 1,
+        "scoreTeamB": 4,
+        "winner": "Frostbite Foxes",
+        "order": 33
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Cold Crushers",
+        "matchId": 666,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Arctic Wolves",
+        "order": 34
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Ice Predators",
+        "matchId": 753,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Frostbite Foxes",
+        "order": 35
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Frostbite Foxes",
+        "matchId": 741,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Frostbite Foxes",
+        "order": 36
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "Winter Storm",
+        "matchId": 699,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Winter Storm",
+        "order": 37
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Blizzard Bears",
+        "matchId": 618,
+        "scoreTeamA": 3,
+        "scoreTeamB": 4,
+        "winner": "Blizzard Bears",
+        "order": 38
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "The Chill",
+        "matchId": 700,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "The Chill",
+        "order": 39
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Ice Breakers",
+        "matchId": 719,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "The Chill",
+        "order": 40
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Snow Owls",
+        "matchId": 622,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Snow Owls",
+        "order": 41
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "Ice Breakers",
+        "matchId": 646,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 42
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Snow Leopards",
+        "matchId": 730,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Snow Leopards",
+        "order": 43
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Avalanche Riders",
+        "matchId": 579,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Avalanche Riders",
+        "order": 44
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Frostbite Foxes",
+        "matchId": 690,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 45
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Glacial Guardians",
+        "matchId": 745,
+        "scoreTeamA": 4,
+        "scoreTeamB": 0,
+        "winner": "Winter Storm",
+        "order": 46
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "The Chill",
+        "matchId": 650,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Frost Giants",
+        "order": 47
+      },
+      {
+        "teamA": "Ice Predators",
+        "teamB": "Thunder Blades",
+        "matchId": 639,
+        "scoreTeamA": 4,
+        "scoreTeamB": 1,
+        "winner": "Ice Predators",
+        "order": 48
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Arctic Wolves",
+        "matchId": 593,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 49
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Frost Giants",
+        "matchId": 592,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Frost Giants",
+        "order": 50
+      },
+      {
+        "teamA": "Glacial Guardians",
+        "teamB": "Frozen Warriors",
+        "matchId": 607,
+        "scoreTeamA": 3,
+        "scoreTeamB": 0,
+        "winner": "Glacial Guardians",
+        "order": 51
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "Frozen Flames",
+        "matchId": 708,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Frozen Flames",
+        "order": 52
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Glacier Hawks",
+        "matchId": 627,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 53
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Glacial Guardians",
+        "matchId": 694,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Northern Lights",
+        "order": 54
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Winter Storm",
+        "matchId": 634,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 55
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Glacial Guardians",
+        "matchId": 682,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Glacier Hawks",
+        "order": 56
+      },
+      {
+        "teamA": "Cold Crushers",
+        "teamB": "Thunder Blades",
+        "matchId": 637,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Thunder Blades",
+        "order": 57
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Blizzard Bears",
+        "matchId": 620,
+        "scoreTeamA": 4,
+        "scoreTeamB": 1,
+        "winner": "Frostbite Foxes",
+        "order": 58
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Avalanche Riders",
+        "matchId": 659,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Arctic Wolves",
+        "order": 59
+      },
+      {
+        "teamA": "Cold Crushers",
+        "teamB": "Polar Panthers",
+        "matchId": 702,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Polar Panthers",
+        "order": 60
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Ice Breakers",
+        "matchId": 660,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Arctic Wolves",
+        "order": 61
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Frozen Warriors",
+        "matchId": 571,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Frozen Warriors",
+        "order": 62
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Cold Crushers",
+        "matchId": 747,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 63
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Avalanche Riders",
+        "matchId": 672,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Avalanche Riders",
+        "order": 64
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Snow Leopards",
+        "matchId": 632,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Snow Leopards",
+        "order": 65
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Snow Owls",
+        "matchId": 748,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Snow Owls",
+        "order": 66
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "Ice Titans",
+        "matchId": 582,
+        "scoreTeamA": 1,
+        "scoreTeamB": 4,
+        "winner": "Ice Titans",
+        "order": 67
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Glacier Hawks",
+        "matchId": 673,
+        "scoreTeamA": 1,
+        "scoreTeamB": 4,
+        "winner": "Glacier Hawks",
+        "order": 68
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "Frostbite Foxes",
+        "matchId": 711,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Avalanche Riders",
+        "order": 69
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Ice Titans",
+        "matchId": 587,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Snow Owls",
+        "order": 70
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Glacial Guardians",
+        "matchId": 624,
+        "scoreTeamA": 3,
+        "scoreTeamB": 0,
+        "winner": "Blizzard Bears",
+        "order": 71
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Polar Panthers",
+        "matchId": 658,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Polar Panthers",
+        "order": 72
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Ice Predators",
+        "matchId": 749,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "The Chill",
+        "order": 73
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "Glacial Guardians",
+        "matchId": 715,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 74
+      },
+      {
+        "teamA": "Ice Predators",
+        "teamB": "Frozen Warriors",
+        "matchId": 606,
+        "scoreTeamA": 4,
+        "scoreTeamB": 4,
+        "winner": "draw",
+        "order": 75
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "The Chill",
+        "matchId": 677,
+        "scoreTeamA": 2,
+        "scoreTeamB": 4,
+        "winner": "The Chill",
+        "order": 76
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Snow Owls",
+        "matchId": 692,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 77
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Frost Giants",
+        "matchId": 653,
+        "scoreTeamA": 3,
+        "scoreTeamB": 0,
+        "winner": "Snow Owls",
+        "order": 78
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Frost Giants",
+        "matchId": 651,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Frost Giants",
+        "order": 79
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Snow Leopards",
+        "matchId": 716,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Ice Breakers",
+        "order": 80
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Arctic Wolves",
+        "matchId": 626,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Arctic Wolves",
+        "order": 81
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Glacier Hawks",
+        "matchId": 611,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Glacier Hawks",
+        "order": 82
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Ice Predators",
+        "matchId": 693,
+        "scoreTeamA": 0,
+        "scoreTeamB": 4,
+        "winner": "Ice Predators",
+        "order": 83
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Polar Panthers",
+        "matchId": 683,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Polar Panthers",
+        "order": 84
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Arctic Wolves",
+        "matchId": 610,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Arctic Wolves",
+        "order": 85
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "The Chill",
+        "matchId": 619,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 86
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "Cold Crushers",
+        "matchId": 652,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Frost Giants",
+        "order": 87
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "Frostbite Foxes",
+        "matchId": 701,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Frostbite Foxes",
+        "order": 88
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Thunder Blades",
+        "matchId": 573,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 89
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Polar Panthers",
+        "matchId": 578,
+        "scoreTeamA": 3,
+        "scoreTeamB": 0,
+        "winner": "Ice Titans",
+        "order": 90
+      },
+      {
+        "teamA": "Cold Crushers",
+        "teamB": "Snow Owls",
+        "matchId": 755,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Cold Crushers",
+        "order": 91
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "Avalanche Riders",
+        "matchId": 695,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 92
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "The Chill",
+        "matchId": 689,
+        "scoreTeamA": 4,
+        "scoreTeamB": 2,
+        "winner": "Northern Lights",
+        "order": 93
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Glacial Guardians",
+        "matchId": 754,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Glacial Guardians",
+        "order": 94
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Cold Crushers",
+        "matchId": 742,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 95
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Cold Crushers",
+        "matchId": 751,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Frostbite Foxes",
+        "order": 96
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Frostbite Foxes",
+        "matchId": 678,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Glacier Hawks",
+        "order": 97
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "The Chill",
+        "matchId": 727,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 98
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "Northern Lights",
+        "matchId": 643,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 99
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Ice Predators",
+        "matchId": 668,
+        "scoreTeamA": 1,
+        "scoreTeamB": 4,
+        "winner": "Ice Predators",
+        "order": 100
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Thunder Blades",
+        "matchId": 591,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Thunder Blades",
+        "order": 101
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Arctic Wolves",
+        "matchId": 661,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 102
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Frost Giants",
+        "matchId": 574,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Frost Giants",
+        "order": 103
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Northern Lights",
+        "matchId": 595,
+        "scoreTeamA": 3,
+        "scoreTeamB": 0,
+        "winner": "Frozen Warriors",
+        "order": 104
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "Glacier Hawks",
+        "matchId": 642,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Frost Giants",
+        "order": 105
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Frozen Flames",
+        "matchId": 600,
+        "scoreTeamA": 3,
+        "scoreTeamB": 0,
+        "winner": "Frozen Warriors",
+        "order": 106
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Ice Breakers",
+        "matchId": 685,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Northern Lights",
+        "order": 107
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Thunder Blades",
+        "matchId": 636,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Frostbite Foxes",
+        "order": 108
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Cold Crushers",
+        "matchId": 721,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 109
+      },
+      {
+        "teamA": "Cold Crushers",
+        "teamB": "Ice Predators",
+        "matchId": 756,
+        "scoreTeamA": 3,
+        "scoreTeamB": 0,
+        "winner": "Cold Crushers",
+        "order": 110
+      },
+      {
+        "teamA": "Ice Predators",
+        "teamB": "Glacial Guardians",
+        "matchId": 760,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Glacial Guardians",
+        "order": 111
+      },
+      {
+        "teamA": "Cold Crushers",
+        "teamB": "Blizzard Bears",
+        "matchId": 621,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Cold Crushers",
+        "order": 112
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Thunder Blades",
+        "matchId": 635,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 113
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Ice Breakers",
+        "matchId": 615,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Ice Breakers",
+        "order": 114
+      },
+      {
+        "teamA": "Cold Crushers",
+        "teamB": "Glacial Guardians",
+        "matchId": 757,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Cold Crushers",
+        "order": 115
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Ice Titans",
+        "matchId": 585,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Frostbite Foxes",
+        "order": 116
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "Glacial Guardians",
+        "matchId": 739,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 117
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Blizzard Bears",
+        "matchId": 590,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 118
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Polar Panthers",
+        "matchId": 629,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Thunder Blades",
+        "order": 119
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "Ice Predators",
+        "matchId": 714,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 120
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Northern Lights",
+        "matchId": 577,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 121
+      },
+      {
+        "teamA": "Cold Crushers",
+        "teamB": "Ice Titans",
+        "matchId": 586,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Ice Titans",
+        "order": 122
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "Ice Breakers",
+        "matchId": 696,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Polar Panthers",
+        "order": 123
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Glacial Guardians",
+        "matchId": 669,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 124
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "The Chill",
+        "matchId": 710,
+        "scoreTeamA": 1,
+        "scoreTeamB": 4,
+        "winner": "The Chill",
+        "order": 125
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "Snow Leopards",
+        "matchId": 647,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Snow Leopards",
+        "order": 126
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Thunder Blades",
+        "matchId": 608,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Blizzard Bears",
+        "order": 127
+      },
+      {
+        "teamA": "Ice Predators",
+        "teamB": "Blizzard Bears",
+        "matchId": 623,
+        "scoreTeamA": 4,
+        "scoreTeamB": 3,
+        "winner": "Ice Predators",
+        "order": 128
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Cold Crushers",
+        "matchId": 679,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Cold Crushers",
+        "order": 129
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Avalanche Riders",
+        "matchId": 707,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Avalanche Riders",
+        "order": 130
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Frostbite Foxes",
+        "matchId": 728,
+        "scoreTeamA": 3,
+        "scoreTeamB": 0,
+        "winner": "Snow Leopards",
+        "order": 131
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Ice Predators",
+        "matchId": 723,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 132
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Winter Storm",
+        "matchId": 740,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "The Chill",
+        "order": 133
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Avalanche Riders",
+        "matchId": 597,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 134
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Frozen Flames",
+        "matchId": 662,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Frozen Flames",
+        "order": 135
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Snow Leopards",
+        "matchId": 674,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Glacier Hawks",
+        "order": 136
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Ice Predators",
+        "matchId": 744,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 137
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Glacier Hawks",
+        "matchId": 680,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Snow Owls",
+        "order": 138
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Glacial Guardians",
+        "matchId": 750,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "The Chill",
+        "order": 139
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Northern Lights",
+        "matchId": 628,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Northern Lights",
+        "order": 140
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "Frost Giants",
+        "matchId": 648,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Frozen Flames",
+        "order": 141
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Snow Owls",
+        "matchId": 743,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Snow Owls",
+        "order": 142
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "Snow Owls",
+        "matchId": 713,
+        "scoreTeamA": 4,
+        "scoreTeamB": 3,
+        "winner": "Avalanche Riders",
+        "order": 143
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Thunder Blades",
+        "matchId": 638,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Thunder Blades",
+        "order": 144
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "Snow Owls",
+        "matchId": 737,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Snow Owls",
+        "order": 145
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Winter Storm",
+        "matchId": 726,
+        "scoreTeamA": 4,
+        "scoreTeamB": 2,
+        "winner": "Snow Leopards",
+        "order": 146
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Frost Giants",
+        "matchId": 609,
+        "scoreTeamA": 4,
+        "scoreTeamB": 2,
+        "winner": "Blizzard Bears",
+        "order": 147
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Snow Leopards",
+        "matchId": 599,
+        "scoreTeamA": 4,
+        "scoreTeamB": 2,
+        "winner": "Frozen Warriors",
+        "order": 148
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "Cold Crushers",
+        "matchId": 712,
+        "scoreTeamA": 4,
+        "scoreTeamB": 3,
+        "winner": "Avalanche Riders",
+        "order": 149
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "Snow Leopards",
+        "matchId": 697,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Snow Leopards",
+        "order": 150
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Blizzard Bears",
+        "matchId": 572,
+        "scoreTeamA": 2,
+        "scoreTeamB": 4,
+        "winner": "Blizzard Bears",
+        "order": 151
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Arctic Wolves",
+        "matchId": 665,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Arctic Wolves",
+        "order": 152
+      },
+      {
+        "teamA": "Frostbite Foxes",
+        "teamB": "Snow Owls",
+        "matchId": 752,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Frostbite Foxes",
+        "order": 153
+      },
+      {
+        "teamA": "Glacial Guardians",
+        "teamB": "Frost Giants",
+        "matchId": 655,
+        "scoreTeamA": 2,
+        "scoreTeamB": 4,
+        "winner": "Frost Giants",
+        "order": 154
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Arctic Wolves",
+        "matchId": 667,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Arctic Wolves",
+        "order": 155
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Winter Storm",
+        "matchId": 688,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 156
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Frozen Flames",
+        "matchId": 675,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "Frozen Flames",
+        "order": 157
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Frozen Flames",
+        "matchId": 725,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Snow Leopards",
+        "order": 158
+      },
+      {
+        "teamA": "Ice Predators",
+        "teamB": "Polar Panthers",
+        "matchId": 704,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Ice Predators",
+        "order": 159
+      },
+      {
+        "teamA": "Cold Crushers",
+        "teamB": "Northern Lights",
+        "matchId": 691,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 160
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "The Chill",
+        "matchId": 734,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "The Chill",
+        "order": 161
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Winter Storm",
+        "matchId": 583,
+        "scoreTeamA": 2,
+        "scoreTeamB": 4,
+        "winner": "Winter Storm",
+        "order": 162
+      },
+      {
+        "teamA": "Glacier Hawks",
+        "teamB": "Polar Panthers",
+        "matchId": 671,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 163
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Avalanche Riders",
+        "matchId": 709,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 164
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Cold Crushers",
+        "matchId": 729,
+        "scoreTeamA": 4,
+        "scoreTeamB": 4,
+        "winner": "draw",
+        "order": 165
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Winter Storm",
+        "matchId": 663,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Arctic Wolves",
+        "order": 166
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Frozen Warriors",
+        "matchId": 598,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Frozen Warriors",
+        "order": 167
+      },
+      {
+        "teamA": "The Chill",
+        "teamB": "Arctic Wolves",
+        "matchId": 664,
+        "scoreTeamA": 4,
+        "scoreTeamB": 1,
+        "winner": "The Chill",
+        "order": 168
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Frozen Flames",
+        "matchId": 687,
+        "scoreTeamA": 4,
+        "scoreTeamB": 0,
+        "winner": "Northern Lights",
+        "order": 169
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Polar Panthers",
+        "matchId": 596,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 170
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "The Chill",
+        "matchId": 584,
+        "scoreTeamA": 2,
+        "scoreTeamB": 3,
+        "winner": "The Chill",
+        "order": 171
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "Blizzard Bears",
+        "matchId": 617,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Frozen Flames",
+        "order": 172
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Snow Leopards",
+        "matchId": 581,
+        "scoreTeamA": 4,
+        "scoreTeamB": 3,
+        "winner": "Ice Titans",
+        "order": 173
+      },
+      {
+        "teamA": "Frozen Flames",
+        "teamB": "Ice Predators",
+        "matchId": 738,
+        "scoreTeamA": 3,
+        "scoreTeamB": 1,
+        "winner": "Frozen Flames",
+        "order": 174
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Snow Leopards",
+        "matchId": 686,
+        "scoreTeamA": 3,
+        "scoreTeamB": 4,
+        "winner": "Snow Leopards",
+        "order": 175
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Frozen Flames",
+        "matchId": 633,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 176
+      },
+      {
+        "teamA": "Frost Giants",
+        "teamB": "Winter Storm",
+        "matchId": 649,
+        "scoreTeamA": 4,
+        "scoreTeamB": 1,
+        "winner": "Frost Giants",
+        "order": 177
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Avalanche Riders",
+        "matchId": 630,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 178
+      },
+      {
+        "teamA": "Ice Predators",
+        "teamB": "Ice Titans",
+        "matchId": 588,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Ice Titans",
+        "order": 179
+      },
+      {
+        "teamA": "Arctic Wolves",
+        "teamB": "Glacier Hawks",
+        "matchId": 656,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Glacier Hawks",
+        "order": 180
+      },
+      {
+        "teamA": "Polar Panthers",
+        "teamB": "Frost Giants",
+        "matchId": 644,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Polar Panthers",
+        "order": 181
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Blizzard Bears",
+        "matchId": 616,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 182
+      },
+      {
+        "teamA": "Snow Owls",
+        "teamB": "Ice Predators",
+        "matchId": 758,
+        "scoreTeamA": 0,
+        "scoreTeamB": 3,
+        "winner": "Ice Predators",
+        "order": 183
+      },
+      {
+        "teamA": "Avalanche Riders",
+        "teamB": "Northern Lights",
+        "matchId": 684,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 184
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Polar Panthers",
+        "matchId": 613,
+        "scoreTeamA": 3,
+        "scoreTeamB": 3,
+        "winner": "draw",
+        "order": 185
+      },
+      {
+        "teamA": "Snow Leopards",
+        "teamB": "Ice Predators",
+        "matchId": 731,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 186
+      },
+      {
+        "teamA": "Thunder Blades",
+        "teamB": "Frost Giants",
+        "matchId": 625,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Frost Giants",
+        "order": 187
+      },
+      {
+        "teamA": "Winter Storm",
+        "teamB": "Glacier Hawks",
+        "matchId": 676,
+        "scoreTeamA": 4,
+        "scoreTeamB": 0,
+        "winner": "Winter Storm",
+        "order": 188
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Avalanche Riders",
+        "matchId": 614,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Avalanche Riders",
+        "order": 189
+      },
+      {
+        "teamA": "Ice Breakers",
+        "teamB": "Frozen Flames",
+        "matchId": 717,
+        "scoreTeamA": 4,
+        "scoreTeamB": 2,
+        "winner": "Ice Breakers",
+        "order": 190
+      },
+      {
+        "teamA": "Ice Titans",
+        "teamB": "Frost Giants",
+        "matchId": 384,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 191,
+        "oddsTeamA": "3.96",
+        "oddsDraw": "17.07",
+        "oddsTeamB": "1.45",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Blizzard Bears",
+        "teamB": "Winter Storm",
+        "matchId": 428,
+        "scoreTeamA": 3,
+        "scoreTeamB": 2,
+        "winner": "Blizzard Bears",
+        "order": 192,
+        "oddsTeamA": "1.73",
+        "oddsDraw": "13.77",
+        "oddsTeamB": "2.86",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Northern Lights",
+        "teamB": "Ice Predators",
+        "matchId": 503,
+        "scoreTeamA": 1,
+        "scoreTeamB": 3,
+        "winner": "Ice Predators",
+        "order": 193,
+        "oddsTeamA": "4.82",
+        "oddsDraw": "9.39",
+        "oddsTeamB": "1.46",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Frozen Warriors",
+        "teamB": "Glacier Hawks",
+        "matchId": 404,
+        "scoreTeamA": 4,
+        "scoreTeamB": 1,
+        "winner": "Frozen Warriors",
+        "order": 194,
+        "oddsTeamA": "2.87",
+        "oddsDraw": "18.08",
+        "oddsTeamB": "1.68",
+        "processedDuringGame": true
+      }
+    ]
+  },
+  "soccer": {
+    "matchups": [
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Shadow Kickers",
+        "matchId": 952,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 1
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Iron Eagles",
+        "matchId": 1084,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 2
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Desert Foxes",
+        "matchId": 1013,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 3
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Crimson Lions",
+        "matchId": 954,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Crimson Lions",
+        "order": 4
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Fire Falcons",
+        "matchId": 959,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 5
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Silver Arrows",
+        "matchId": 1037,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Silver Arrows",
+        "order": 6
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Ocean Warriors",
+        "matchId": 1056,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 7
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Scarlet Knights",
+        "matchId": 1109,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Mighty Panthers",
+        "order": 8
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Steel Strikers",
+        "matchId": 1104,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Steel Strikers",
+        "order": 9
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Mighty Panthers",
+        "matchId": 1087,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 10
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Scarlet Knights",
+        "matchId": 1001,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 11
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Steel Strikers",
+        "matchId": 1130,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Galaxy Rovers",
+        "order": 12
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Steel Strikers",
+        "matchId": 987,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Steel Strikers",
+        "order": 13
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Scarlet Knights",
+        "matchId": 1131,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Scarlet Knights",
+        "order": 14
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Steel Strikers",
+        "matchId": 1035,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Steel Strikers",
+        "order": 15
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Mighty Panthers",
+        "matchId": 1077,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 16
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Blue Sharks",
+        "matchId": 1050,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Silver Arrows",
+        "order": 17
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Wild Stallions",
+        "matchId": 993,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Shadow Kickers",
+        "order": 18
+      },
+      {
+        "teamA": "Ocean Warriors",
+        "teamB": "Violet Vipers",
+        "matchId": 1121,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Violet Vipers",
+        "order": 19
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Wild Stallions",
+        "matchId": 1063,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 20
+      },
+      {
+        "teamA": "Iron Eagles",
+        "teamB": "Golden Eagles",
+        "matchId": 986,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 21
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Lightning Bolts",
+        "matchId": 967,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Lightning Bolts",
+        "order": 22
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Iron Eagles",
+        "matchId": 1111,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 23
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Lightning Bolts",
+        "matchId": 1110,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 24
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Iron Eagles",
+        "matchId": 1094,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Iron Eagles",
+        "order": 25
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Fire Falcons",
+        "matchId": 977,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Golden Eagles",
+        "order": 26
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Emerald United",
+        "matchId": 971,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 27
+      },
+      {
+        "teamA": "Steel Strikers",
+        "teamB": "Rapid Rangers",
+        "matchId": 1049,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Steel Strikers",
+        "order": 28
+      },
+      {
+        "teamA": "Steel Strikers",
+        "teamB": "Mighty Panthers",
+        "matchId": 1112,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Steel Strikers",
+        "order": 29
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Fire Falcons",
+        "matchId": 994,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 30
+      },
+      {
+        "teamA": "Lightning Bolts",
+        "teamB": "Shadow Kickers",
+        "matchId": 1002,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Lightning Bolts",
+        "order": 31
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Desert Foxes",
+        "matchId": 1088,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 32
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Lightning Bolts",
+        "matchId": 1018,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Emerald United",
+        "order": 33
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1099,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "The Spartans",
+        "order": 34
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Ocean Warriors",
+        "matchId": 1029,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Crimson Lions",
+        "order": 35
+      },
+      {
+        "teamA": "Steel Strikers",
+        "teamB": "Thunder Strikers",
+        "matchId": 969,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 36
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Blue Sharks",
+        "matchId": 991,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Blue Sharks",
+        "order": 37
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Wild Stallions",
+        "matchId": 1051,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 38
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Ocean Warriors",
+        "matchId": 1043,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 39
+      },
+      {
+        "teamA": "Ocean Warriors",
+        "teamB": "Iron Eagles",
+        "matchId": 1124,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Iron Eagles",
+        "order": 40
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Mighty Panthers",
+        "matchId": 996,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 41
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Scarlet Knights",
+        "matchId": 1116,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 42
+      },
+      {
+        "teamA": "Iron Eagles",
+        "teamB": "Crimson Lions",
+        "matchId": 1034,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Crimson Lions",
+        "order": 43
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Rapid Rangers",
+        "matchId": 973,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Rapid Rangers",
+        "order": 44
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Crimson Lions",
+        "matchId": 1005,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 45
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Golden Eagles",
+        "matchId": 951,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 46
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Silver Arrows",
+        "matchId": 992,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Shadow Kickers",
+        "order": 47
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Steel Strikers",
+        "matchId": 1134,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Steel Strikers",
+        "order": 48
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Steel Strikers",
+        "matchId": 1095,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Steel Strikers",
+        "order": 49
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Iron Eagles",
+        "matchId": 1073,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Iron Eagles",
+        "order": 50
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "The Spartans",
+        "matchId": 1011,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Emerald United",
+        "order": 51
+      },
+      {
+        "teamA": "Scarlet Knights",
+        "teamB": "The Spartans",
+        "matchId": 1101,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "The Spartans",
+        "order": 52
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Steel Strikers",
+        "matchId": 1062,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Blue Sharks",
+        "order": 53
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1030,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 54
+      },
+      {
+        "teamA": "Ocean Warriors",
+        "teamB": "Golden Eagles",
+        "matchId": 981,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Ocean Warriors",
+        "order": 55
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Violet Vipers",
+        "matchId": 983,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Golden Eagles",
+        "order": 56
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Rapid Rangers",
+        "matchId": 990,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 57
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Lightning Bolts",
+        "matchId": 1047,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 58
+      },
+      {
+        "teamA": "Scarlet Knights",
+        "teamB": "Iron Eagles",
+        "matchId": 1136,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 59
+      },
+      {
+        "teamA": "Ocean Warriors",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1120,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Ocean Warriors",
+        "order": 60
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Thunder Strikers",
+        "matchId": 961,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 61
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Silver Arrows",
+        "matchId": 1008,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Silver Arrows",
+        "order": 62
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Iron Eagles",
+        "matchId": 1129,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 63
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Violet Vipers",
+        "matchId": 1070,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 64
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Blue Sharks",
+        "matchId": 1055,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Blue Sharks",
+        "order": 65
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1057,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Blue Sharks",
+        "order": 66
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "The Spartans",
+        "matchId": 1026,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "The Spartans",
+        "order": 67
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Mighty Panthers",
+        "matchId": 979,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Mighty Panthers",
+        "order": 68
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Blue Sharks",
+        "matchId": 1053,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 69
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Emerald United",
+        "matchId": 988,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Emerald United",
+        "order": 70
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Iron Eagles",
+        "matchId": 1133,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Iron Eagles",
+        "order": 71
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Fire Falcons",
+        "matchId": 1075,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Wild Stallions",
+        "order": 72
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Lightning Bolts",
+        "matchId": 1132,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Violet Vipers",
+        "order": 73
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "The Spartans",
+        "matchId": 1065,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "The Spartans",
+        "order": 74
+      },
+      {
+        "teamA": "Iron Eagles",
+        "teamB": "Shadow Kickers",
+        "matchId": 1003,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 75
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Fire Falcons",
+        "matchId": 1052,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 76
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Blue Sharks",
+        "matchId": 1054,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Mighty Panthers",
+        "order": 77
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Violet Vipers",
+        "matchId": 1045,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Rapid Rangers",
+        "order": 78
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Wild Stallions",
+        "matchId": 1024,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Wild Stallions",
+        "order": 79
+      },
+      {
+        "teamA": "Steel Strikers",
+        "teamB": "Ocean Warriors",
+        "matchId": 1125,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Steel Strikers",
+        "order": 80
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Ocean Warriors",
+        "matchId": 1113,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 81
+      },
+      {
+        "teamA": "Lightning Bolts",
+        "teamB": "Silver Arrows",
+        "matchId": 1072,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 82
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Lightning Bolts",
+        "matchId": 1102,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 83
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Violet Vipers",
+        "matchId": 1108,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Violet Vipers",
+        "order": 84
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Blue Sharks",
+        "matchId": 974,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 85
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Thunder Strikers",
+        "matchId": 964,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 86
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Shadow Kickers",
+        "matchId": 999,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Galaxy Rovers",
+        "order": 87
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Ocean Warriors",
+        "matchId": 1089,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Fire Falcons",
+        "order": 88
+      },
+      {
+        "teamA": "Ocean Warriors",
+        "teamB": "Shadow Kickers",
+        "matchId": 998,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 89
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Iron Eagles",
+        "matchId": 1103,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Iron Eagles",
+        "order": 90
+      },
+      {
+        "teamA": "Ocean Warriors",
+        "teamB": "Scarlet Knights",
+        "matchId": 1122,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Ocean Warriors",
+        "order": 91
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1107,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Galaxy Rovers",
+        "order": 92
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Rapid Rangers",
+        "matchId": 955,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Thunder Strikers",
+        "order": 93
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Crimson Lions",
+        "matchId": 972,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 94
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Fire Falcons",
+        "matchId": 1010,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 95
+      },
+      {
+        "teamA": "Scarlet Knights",
+        "teamB": "Golden Eagles",
+        "matchId": 984,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 96
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Desert Foxes",
+        "matchId": 1115,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 97
+      },
+      {
+        "teamA": "Scarlet Knights",
+        "teamB": "Silver Arrows",
+        "matchId": 1071,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 98
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Violet Vipers",
+        "matchId": 1126,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 99
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Desert Foxes",
+        "matchId": 1042,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 100
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Rapid Rangers",
+        "matchId": 1006,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Rapid Rangers",
+        "order": 101
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Steel Strikers",
+        "matchId": 1074,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Silver Arrows",
+        "order": 102
+      },
+      {
+        "teamA": "Iron Eagles",
+        "teamB": "Steel Strikers",
+        "matchId": 1140,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 103
+      },
+      {
+        "teamA": "Lightning Bolts",
+        "teamB": "Iron Eagles",
+        "matchId": 1138,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Iron Eagles",
+        "order": 104
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1069,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Galaxy Rovers",
+        "order": 105
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "The Spartans",
+        "matchId": 1040,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 106
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Crimson Lions",
+        "matchId": 1022,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Blue Sharks",
+        "order": 107
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Shadow Kickers",
+        "matchId": 970,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 108
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Silver Arrows",
+        "matchId": 1023,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Crimson Lions",
+        "order": 109
+      },
+      {
+        "teamA": "Scarlet Knights",
+        "teamB": "Emerald United",
+        "matchId": 1017,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Scarlet Knights",
+        "order": 110
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Violet Vipers",
+        "matchId": 1100,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Violet Vipers",
+        "order": 111
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "The Spartans",
+        "matchId": 1076,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Wild Stallions",
+        "order": 112
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Golden Eagles",
+        "matchId": 982,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Golden Eagles",
+        "order": 113
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Scarlet Knights",
+        "matchId": 1082,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Scarlet Knights",
+        "order": 114
+      },
+      {
+        "teamA": "Lightning Bolts",
+        "teamB": "Crimson Lions",
+        "matchId": 1033,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Lightning Bolts",
+        "order": 115
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Fire Falcons",
+        "matchId": 1025,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Crimson Lions",
+        "order": 116
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Wild Stallions",
+        "matchId": 1009,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 117
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Silver Arrows",
+        "matchId": 1067,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 118
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Lightning Bolts",
+        "matchId": 1128,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 119
+      },
+      {
+        "teamA": "Scarlet Knights",
+        "teamB": "Crimson Lions",
+        "matchId": 1032,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Crimson Lions",
+        "order": 120
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1114,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 121
+      },
+      {
+        "teamA": "Steel Strikers",
+        "teamB": "Shadow Kickers",
+        "matchId": 1004,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Shadow Kickers",
+        "order": 122
+      },
+      {
+        "teamA": "Ocean Warriors",
+        "teamB": "Lightning Bolts",
+        "matchId": 1123,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 123
+      },
+      {
+        "teamA": "Steel Strikers",
+        "teamB": "Desert Foxes",
+        "matchId": 1119,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Desert Foxes",
+        "order": 124
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1090,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Fire Falcons",
+        "order": 125
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Desert Foxes",
+        "matchId": 1028,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Crimson Lions",
+        "order": 126
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Lightning Bolts",
+        "matchId": 1060,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Lightning Bolts",
+        "order": 127
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Mighty Panthers",
+        "matchId": 1105,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Desert Foxes",
+        "order": 128
+      },
+      {
+        "teamA": "Lightning Bolts",
+        "teamB": "Steel Strikers",
+        "matchId": 1139,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Steel Strikers",
+        "order": 129
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Steel Strikers",
+        "matchId": 1085,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 130
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Silver Arrows",
+        "matchId": 975,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 131
+      },
+      {
+        "teamA": "Iron Eagles",
+        "teamB": "Emerald United",
+        "matchId": 1019,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Emerald United",
+        "order": 132
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Ocean Warriors",
+        "matchId": 1079,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Ocean Warriors",
+        "order": 133
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Ocean Warriors",
+        "matchId": 963,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Thunder Strikers",
+        "order": 134
+      },
+      {
+        "teamA": "Steel Strikers",
+        "teamB": "Emerald United",
+        "matchId": 1020,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Steel Strikers",
+        "order": 135
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Mighty Panthers",
+        "matchId": 1012,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Emerald United",
+        "order": 136
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Wild Stallions",
+        "matchId": 976,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Wild Stallions",
+        "order": 137
+      },
+      {
+        "teamA": "Scarlet Knights",
+        "teamB": "Lightning Bolts",
+        "matchId": 1135,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Lightning Bolts",
+        "order": 138
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Blue Sharks",
+        "matchId": 956,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 139
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Shadow Kickers",
+        "matchId": 1000,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 140
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Desert Foxes",
+        "matchId": 1078,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 141
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Ocean Warriors",
+        "matchId": 1068,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Silver Arrows",
+        "order": 142
+      },
+      {
+        "teamA": "Iron Eagles",
+        "teamB": "Rapid Rangers",
+        "matchId": 1048,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 143
+      },
+      {
+        "teamA": "Steel Strikers",
+        "teamB": "Scarlet Knights",
+        "matchId": 1137,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 144
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Desert Foxes",
+        "matchId": 997,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Desert Foxes",
+        "order": 145
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Blue Sharks",
+        "matchId": 1007,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Emerald United",
+        "order": 146
+      },
+      {
+        "teamA": "Lightning Bolts",
+        "teamB": "Golden Eagles",
+        "matchId": 985,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 147
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Scarlet Knights",
+        "matchId": 1046,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Rapid Rangers",
+        "order": 148
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Scarlet Knights",
+        "matchId": 1127,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Galaxy Rovers",
+        "order": 149
+      },
+      {
+        "teamA": "Iron Eagles",
+        "teamB": "Thunder Strikers",
+        "matchId": 968,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 150
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Lightning Bolts",
+        "matchId": 1093,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Lightning Bolts",
+        "order": 151
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Scarlet Knights",
+        "matchId": 1092,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 152
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Scarlet Knights",
+        "matchId": 1059,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 153
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Iron Eagles",
+        "matchId": 1118,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Desert Foxes",
+        "order": 154
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Fire Falcons",
+        "matchId": 1039,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 155
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Desert Foxes",
+        "matchId": 1097,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 156
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Emerald United",
+        "matchId": 953,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Thunder Strikers",
+        "order": 157
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Thunder Strikers",
+        "matchId": 965,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Thunder Strikers",
+        "order": 158
+      },
+      {
+        "teamA": "Blue Sharks",
+        "teamB": "Iron Eagles",
+        "matchId": 1061,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Iron Eagles",
+        "order": 159
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "The Spartans",
+        "matchId": 960,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Thunder Strikers",
+        "order": 160
+      },
+      {
+        "teamA": "Ocean Warriors",
+        "teamB": "Emerald United",
+        "matchId": 1014,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Emerald United",
+        "order": 161
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Mighty Panthers",
+        "matchId": 1041,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "Rapid Rangers",
+        "order": 162
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "The Spartans",
+        "matchId": 1086,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 163
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Crimson Lions",
+        "matchId": 1027,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Crimson Lions",
+        "order": 164
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Violet Vipers",
+        "matchId": 1081,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Violet Vipers",
+        "order": 165
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Emerald United",
+        "matchId": 1016,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Violet Vipers",
+        "order": 166
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Violet Vipers",
+        "matchId": 1031,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Crimson Lions",
+        "order": 167
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Lightning Bolts",
+        "matchId": 1117,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Desert Foxes",
+        "order": 168
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Mighty Panthers",
+        "matchId": 1066,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Mighty Panthers",
+        "order": 169
+      },
+      {
+        "teamA": "Desert Foxes",
+        "teamB": "Thunder Strikers",
+        "matchId": 962,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 170
+      },
+      {
+        "teamA": "Lightning Bolts",
+        "teamB": "Wild Stallions",
+        "matchId": 1083,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Wild Stallions",
+        "order": 171
+      },
+      {
+        "teamA": "Scarlet Knights",
+        "teamB": "Thunder Strikers",
+        "matchId": 966,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 172
+      },
+      {
+        "teamA": "Shadow Kickers",
+        "teamB": "Crimson Lions",
+        "matchId": 989,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Shadow Kickers",
+        "order": 173
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Wild Stallions",
+        "matchId": 1038,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Wild Stallions",
+        "order": 174
+      },
+      {
+        "teamA": "Crimson Lions",
+        "teamB": "Rapid Rangers",
+        "matchId": 1021,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Crimson Lions",
+        "order": 175
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Wild Stallions",
+        "matchId": 958,
+        "scoreTeamA": 1,
+        "scoreTeamB": 2,
+        "winner": "Wild Stallions",
+        "order": 176
+      },
+      {
+        "teamA": "Wild Stallions",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1080,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 177
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Mighty Panthers",
+        "matchId": 1096,
+        "scoreTeamA": 1,
+        "scoreTeamB": 0,
+        "winner": "The Spartans",
+        "order": 178
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "The Spartans",
+        "matchId": 978,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 179
+      },
+      {
+        "teamA": "Galaxy Rovers",
+        "teamB": "Emerald United",
+        "matchId": 1015,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 180
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Silver Arrows",
+        "matchId": 957,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Silver Arrows",
+        "order": 181
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Shadow Kickers",
+        "matchId": 995,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 182
+      },
+      {
+        "teamA": "Silver Arrows",
+        "teamB": "Fire Falcons",
+        "matchId": 1064,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 183
+      },
+      {
+        "teamA": "Fire Falcons",
+        "teamB": "Violet Vipers",
+        "matchId": 1091,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Fire Falcons",
+        "order": 184
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Galaxy Rovers",
+        "matchId": 1044,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 185
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Desert Foxes",
+        "matchId": 980,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 186
+      },
+      {
+        "teamA": "Violet Vipers",
+        "teamB": "Blue Sharks",
+        "matchId": 1058,
+        "scoreTeamA": 0,
+        "scoreTeamB": 2,
+        "winner": "Blue Sharks",
+        "order": 187
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Ocean Warriors",
+        "matchId": 1106,
+        "scoreTeamA": 2,
+        "scoreTeamB": 2,
+        "winner": "draw",
+        "order": 188
+      },
+      {
+        "teamA": "The Spartans",
+        "teamB": "Ocean Warriors",
+        "matchId": 1098,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 189
+      },
+      {
+        "teamA": "Rapid Rangers",
+        "teamB": "Blue Sharks",
+        "matchId": 1036,
+        "scoreTeamA": 2,
+        "scoreTeamB": 1,
+        "winner": "Rapid Rangers",
+        "order": 190
+      },
+      {
+        "teamA": "Emerald United",
+        "teamB": "Scarlet Knights",
+        "matchId": 827,
+        "scoreTeamA": 2,
+        "scoreTeamB": 0,
+        "winner": "Emerald United",
+        "order": 191,
+        "oddsTeamA": "3.29",
+        "oddsDraw": "7.39",
+        "oddsTeamB": "1.78",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Golden Eagles",
+        "teamB": "Lightning Bolts",
+        "matchId": 795,
+        "scoreTeamA": 0,
+        "scoreTeamB": 1,
+        "winner": "Lightning Bolts",
+        "order": 192,
+        "oddsTeamA": "4.00",
+        "oddsDraw": "2.17",
+        "oddsTeamB": "3.45",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Mighty Panthers",
+        "teamB": "Lightning Bolts",
+        "matchId": 920,
+        "scoreTeamA": 0,
+        "scoreTeamB": 0,
+        "winner": "draw",
+        "order": 193,
+        "oddsTeamA": "3.40",
+        "oddsDraw": "2.62",
+        "oddsTeamB": "3.08",
+        "processedDuringGame": true
+      },
+      {
+        "teamA": "Thunder Strikers",
+        "teamB": "Shadow Kickers",
+        "matchId": 762,
+        "scoreTeamA": 1,
+        "scoreTeamB": 1,
+        "winner": "draw",
+        "order": 194,
+        "oddsTeamA": "3.23",
+        "oddsDraw": "2.41",
+        "oddsTeamB": "3.63",
+        "processedDuringGame": true
+      }
+    ]
+  }
+}

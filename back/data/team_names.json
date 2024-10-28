@@ -1,0 +1,77 @@
+[
+  {
+    "sport": "boxing",
+    "teams": [
+      "Iron Fist",
+      "Thunder Punch",
+      "Steel Jaw",
+      "The Viper",
+      "Shadow Boxer",
+      "Raging Bull",
+      "Knockout King",
+      "The Phantom",
+      "Brick Wall",
+      "The Hurricane",
+      "Iron Will",
+      "Golden Gloves",
+      "The Tornado",
+      "Lightning Strike",
+      "The Cobra",
+      "Bone Crusher",
+      "The Predator",
+      "Red Fury",
+      "The Beast",
+      "Shadow Fury"
+    ]
+  },
+  {
+    "sport": "hockey",
+    "teams": [
+      "Ice Titans",
+      "Frozen Warriors",
+      "Blizzard Bears",
+      "Thunder Blades",
+      "Frost Giants",
+      "Arctic Wolves",
+      "Glacier Hawks",
+      "Northern Lights",
+      "Polar Panthers",
+      "Avalanche Riders",
+      "Ice Breakers",
+      "Snow Leopards",
+      "Frozen Flames",
+      "Winter Storm",
+      "The Chill",
+      "Frostbite Foxes",
+      "Cold Crushers",
+      "Snow Owls",
+      "Ice Predators",
+      "Glacial Guardians"
+    ]
+  },
+  {
+    "sport": "soccer",
+    "teams": [
+      "Thunder Strikers",
+      "Golden Eagles",
+      "Shadow Kickers",
+      "Emerald United",
+      "Crimson Lions",
+      "Rapid Rangers",
+      "Blue Sharks",
+      "Silver Arrows",
+      "Wild Stallions",
+      "Fire Falcons",
+      "The Spartans",
+      "Mighty Panthers",
+      "Desert Foxes",
+      "Ocean Warriors",
+      "Galaxy Rovers",
+      "Violet Vipers",
+      "Scarlet Knights",
+      "Lightning Bolts",
+      "Iron Eagles",
+      "Steel Strikers"
+    ]
+  }
+]

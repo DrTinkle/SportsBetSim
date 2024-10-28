@@ -1,0 +1,329 @@
+/* Base Body Style */
+body {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Logo */
+.main-logo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Process Button Container */
+.process-next-matches-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Process Button */
+.process-next-matches-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #b30000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.process-next-matches-button:hover {
+  background-color: #e60000;
+  box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+.process-next-matches-button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+}
+
+/* Initial Setup Text */
+.initial-setup-text {
+  text-align: center;
+  padding: 15px;
+  line-height: 1.5;
+  background: linear-gradient(135deg, #330000, #660000);
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
+  color: #ffcccc;
+  font-size: 3rem;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Paragraph */
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #e6e6e6;
+}
+
+/* Headers */
+.next-matchups-header,
+.team-stats-header,
+.match-history-header {
+  text-align: center;
+  color: #ff3333;
+}
+
+/* Sport Selector */
+.sport-selector {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff6666;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+/* Matchups Container */
+.matchups-container {
+  padding: 20px;
+}
+
+.matchups-grid {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+}
+
+/* Matchups Sport Section */
+.matchups-sport-section {
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #4d0000;
+  color: #ffcccc;
+  box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.2);
+}
+
+.matchups-sport-header {
+  text-align: center;
+  color: #ff0000;
+}
+
+/* Next Matchups List */
+.next-matchups-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  margin-left: 0;
+}
+
+.next-matchups-list li {
+  position: relative;
+  padding-left: 5em;
+  color: #ff6666;
+  padding: 15px;
+}
+
+.next-matchups-list li::before {
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #ff3333;
+  padding-left: 10px;
+}
+
+.next-matchups-list li:nth-child(1)::before {
+  content: 'Next';
+}
+
+.next-matchups-list li:nth-child(2)::before,
+.next-matchups-list li:nth-child(3)::before {
+  padding-left: 1.4em;
+}
+
+.next-matchups-list li:nth-child(2)::before {
+  content: '2';
+}
+
+.next-matchups-list li:nth-child(3)::before {
+  content: '3';
+}
+
+/* Match Items */
+.next-match {
+  font-weight: bold;
+  background-color: #330000;
+  color: #ff6666;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.2);
+}
+
+.following-match {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #1f1f1f;
+  color: #e6e6e6;
+  border-radius: 5px;
+}
+
+/* Match History */
+.match-history-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.match-history-grid {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.match-history-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.match-history-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #292929;
+  border-radius: 5px;
+  color: #ff9999;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.match-history-item strong {
+  color: #ff3333;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+/* Team Card */
+.team-card {
+  border: 1px solid #4d0000;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  cursor: pointer;
+  color: #ffcccc;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.15);
+}
+
+.team-card:hover {
+  background-color: #330000;
+  transform: scale(1.05);
+}
+
+.team-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ff3333;
+}
+
+/* Modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  color: #ffcccc;
+  box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+.team-history-match-winner {
+  color: #ff4d4d;
+}
+
+/* Close Button */
+.close {
+  color: #ff4d4d;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff6666;
+}
+
+/* Input Field */
+.filter-input {
+  padding: 8px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #660000;
+  background-color: #1a1a1a;
+  color: #ffcccc;
+}
+
+/* Bet Ticket Button Container */
+.bet-ticket-buttons-container {
+  display: grid;
+  width: 40%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+}
+
+/* Bet Ticket Button */
+.bet-ticket-button,
+.show-bet-tickets-button {
+  background-color: #b30000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bet-ticket-button:hover,
+.show-bet-tickets-button:hover {
+  background-color: #e60000;
+}
