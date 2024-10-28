@@ -1,24 +1,20 @@
-/* Base Body Style */
 body {
   background-color: #1a1a1a;
   color: #f2f2f2;
   font-family: Arial, sans-serif;
 }
 
-/* Main Logo */
 .main-logo {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
 }
 
-/* Process Button Container */
 .process-next-matches-container {
   margin-top: 20px;
   text-align: center;
 }
 
-/* Process Button */
 .process-next-matches-button {
   position: fixed;
   top: 10px;
@@ -44,7 +40,6 @@ body {
   cursor: not-allowed;
 }
 
-/* Initial Setup Text */
 .initial-setup-text {
   text-align: center;
   padding: 15px;
@@ -59,21 +54,18 @@ body {
   animation: fadeIn 1s forwards;
 }
 
-/* Fade-In Animation */
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
 
-/* Paragraph */
 p {
   margin-top: 10px;
   font-size: 14px;
   color: #e6e6e6;
 }
 
-/* Headers */
 .next-matchups-header,
 .team-stats-header,
 .match-history-header {
@@ -81,7 +73,6 @@ p {
   color: #ff3333;
 }
 
-/* Sport Selector */
 .sport-selector {
   margin-bottom: 20px;
   text-align: center;
@@ -93,7 +84,6 @@ p {
   box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.3);
 }
 
-/* Matchups Container */
 .matchups-container {
   padding: 20px;
 }
@@ -106,7 +96,6 @@ p {
   margin: 0 auto;
 }
 
-/* Matchups Sport Section */
 .matchups-sport-section {
   background-color: #2a2a2a;
   padding: 10px;
@@ -121,7 +110,6 @@ p {
   color: #ff0000;
 }
 
-/* Next Matchups List */
 .next-matchups-list {
   list-style-type: none;
   text-align: center;
@@ -161,7 +149,6 @@ p {
   content: '3';
 }
 
-/* Match Items */
 .next-match {
   font-weight: bold;
   background-color: #330000;
@@ -180,7 +167,6 @@ p {
   border-radius: 5px;
 }
 
-/* Match History */
 .match-history-container {
   padding: 20px;
   text-align: center;
@@ -214,7 +200,6 @@ p {
   color: #ff3333;
 }
 
-/* Team Grid */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -223,7 +208,6 @@ p {
   margin: 20px auto;
 }
 
-/* Team Card */
 .team-card {
   border: 1px solid #4d0000;
   padding: 20px;
@@ -249,7 +233,6 @@ p {
   border: 2px solid #ff3333;
 }
 
-/* Modal */
 .modal {
   display: flex;
   justify-content: center;
@@ -277,7 +260,6 @@ p {
   color: #ff4d4d;
 }
 
-/* Close Button */
 .close {
   color: #ff4d4d;
   float: right;
@@ -290,7 +272,6 @@ p {
   color: #ff6666;
 }
 
-/* Input Field */
 .filter-input {
   padding: 8px;
   margin: 10px 0;
@@ -301,7 +282,6 @@ p {
   color: #ffcccc;
 }
 
-/* Bet Ticket Button Container */
 .bet-ticket-buttons-container {
   display: grid;
   width: 40%;
@@ -310,7 +290,6 @@ p {
   margin: 0 auto;
 }
 
-/* Bet Ticket Button */
 .bet-ticket-button,
 .show-bet-tickets-button {
   background-color: #b30000;

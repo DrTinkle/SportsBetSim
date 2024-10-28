@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Helper function to generate all combinations (bet rows)
 const generateCombinations = (betGroups) => {
   const result = [];
 
@@ -20,24 +19,21 @@ const generateCombinations = (betGroups) => {
   return result;
 };
 
-// Function to sort bets by sport order: B, S, H (Boxing, Soccer, Hockey)
 const sortBets = (a, b) => {
   const sportOrder = ['B', 'S', 'H'];
-  const aSport = a[0]; // First letter (e.g., B1 => B)
+  const aSport = a[0];
   const bSport = b[0];
 
   if (aSport !== bSport) {
-    return sportOrder.indexOf(aSport) - sportOrder.indexOf(bSport); // Sort by sport order
+    return sportOrder.indexOf(aSport) - sportOrder.indexOf(bSport);
   }
 
-  // If same sport, sort by match number (e.g., B1 vs B2)
   return parseInt(a.slice(1)) - parseInt(b.slice(1));
 };
 
 const BetTicket = ({ selectedBets, setSelectedBets, finalizeTicket, clearTicket }) => {
-  const [betAmount, setBetAmount] = useState(0); // Bet amount state
+  const [betAmount, setBetAmount] = useState(0);
 
-  // Group bets by match label (e.g., B1, S1)
   const groupedBets = selectedBets.reduce((acc, bet) => {
     if (!acc[bet.label]) {
       acc[bet.label] = [];
@@ -46,20 +42,15 @@ const BetTicket = ({ selectedBets, setSelectedBets, finalizeTicket, clearTicket 
     return acc;
   }, {});
 
-  // Sort the grouped bets by B, S, H order
   const sortedLabels = Object.keys(groupedBets).sort(sortBets);
 
-  // Calculate all combinations of bet rows and their total odds
   const calculateBetRows = () => {
     if (selectedBets.length === 0) return { min: 0, max: 0, totalLines: 0 };
 
-    // Get all bet groups for combinations
     const betGroups = Object.values(groupedBets);
 
-    // Generate all possible combinations of bets
     const combinations = generateCombinations(betGroups);
 
-    // Calculate odds for each row and find the min/max odds
     const rowOdds = combinations.map((row) =>
       row.reduce((total, bet) => total * parseFloat(bet.odds), 1)
     );
@@ -72,13 +63,11 @@ const BetTicket = ({ selectedBets, setSelectedBets, finalizeTicket, clearTicket 
 
   const { min, max, totalLines } = calculateBetRows();
 
-  // Function to handle bet amount input
   const handleBetAmountChange = (e) => {
     const amount = parseFloat(e.target.value);
     setBetAmount(isNaN(amount) ? 0 : amount);
   };
 
-  // Function to finalize and save the ticket
   const handleFinalizeTicket = () => {
     const totalCost = betAmount * totalLines;
 
@@ -94,14 +83,11 @@ const BetTicket = ({ selectedBets, setSelectedBets, finalizeTicket, clearTicket 
       },
     };
 
-    // Send the ticket to the parent component (TicketManager) for saving
     finalizeTicket(ticket);
 
-    // Clear the bet ticket
     clearTicket();
   };
 
-  // Function to manually clear the ticket
   const handleClearTicket = () => {
     clearTicket();
     setBetAmount(0);
@@ -128,7 +114,6 @@ const BetTicket = ({ selectedBets, setSelectedBets, finalizeTicket, clearTicket 
 
       {selectedBets.length > 0 && (
         <>
-          {/* Bet amount input */}
           <div className="bet-amount-input">
             <label>Bet Amount per Line: </label>
             <input
@@ -139,7 +124,6 @@ const BetTicket = ({ selectedBets, setSelectedBets, finalizeTicket, clearTicket 
             />
           </div>
 
-          {/* Display the odds range for the bet rows */}
           <div className="bet-ticket-footer">
             <p>
               Odds: {min} - {max}
@@ -152,12 +136,10 @@ const BetTicket = ({ selectedBets, setSelectedBets, finalizeTicket, clearTicket 
             </p>
           </div>
 
-          {/* Finalize ticket button */}
           <button className="finalize-ticket-button" onClick={handleFinalizeTicket}>
             Finalize Ticket
           </button>
 
-          {/* Clear ticket button */}
           <button className="clear-ticket-button" onClick={handleClearTicket}>
             Clear Ticket
           </button>

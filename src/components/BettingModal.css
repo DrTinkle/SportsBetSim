@@ -1,4 +1,3 @@
-/* Overlay for the modal */
 .betting-modal-overlay {
   position: fixed;
   top: 0;
@@ -12,7 +11,6 @@
   z-index: 1000;
 }
 
-/* Betting modal container with fixed width */
 .betting-modal {
   background: #1a1a1a;
   padding: 25px;
@@ -26,7 +24,6 @@
   color: #ffcccc;
 }
 
-/* Close button for the modal */
 .betting-modal-close-button {
   align-self: flex-end;
   background: transparent;
@@ -41,7 +38,6 @@
   color: #ff4d4d;
 }
 
-/* Main content area of the modal */
 .betting-modal-content {
   display: flex;
   justify-content: space-between;
@@ -49,7 +45,6 @@
   width: 100%;
 }
 
-/* Betting grid container */
 .betting-grid-container {
   width: 65%;
   max-height: 75vh;
@@ -57,7 +52,6 @@
   padding-right: 10px;
 }
 
-/* Betting grid styles */
 .betting-grid {
   margin: 10px;
 }
@@ -74,7 +68,6 @@
   color: #ff6666;
 }
 
-/* Match grid (table) styles */
 .match-grid {
   width: 100%;
   border-collapse: collapse;
@@ -99,7 +92,6 @@
   background-color: #1a1a1a;
 }
 
-/* Button styles for odds */
 .match-grid button {
   width: 85%;
   padding: 10px;
@@ -124,21 +116,18 @@
   box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
 }
 
-/* No matches available text */
 .no-matches {
   text-align: center;
   font-style: italic;
   color: #888;
 }
 
-/* Bet ticket container */
 .bet-ticket-container {
   width: 30%;
   max-height: 75vh;
   overflow-y: auto;
 }
 
-/* Bet ticket styling */
 .bet-ticket {
   background-color: #f0ffff;
   padding: 20px;
@@ -156,13 +145,11 @@
   text-align: center;
 }
 
-/* Bet ticket list */
 .bet-ticket-list {
   list-style: none;
   padding: 0;
 }
 
-/* Individual bet ticket item */
 .bet-ticket-item {
   display: flex;
   justify-content: space-between;
@@ -177,7 +164,6 @@
   border-bottom: none;
 }
 
-/* Remove bet button */
 .remove-bet-button {
   background-color: #b30000;
   color: white;
@@ -192,7 +178,6 @@
   background-color: #ff1a1a;
 }
 
-/* Footer of bet ticket */
 .bet-ticket-footer {
   margin-top: 20px;
   font-weight: bold;
@@ -205,7 +190,6 @@
   font-size: 1.1rem;
 }
 
-/* Scrollbar styling for grid and ticket */
 .betting-grid-container::-webkit-scrollbar,
 .bet-ticket-container::-webkit-scrollbar {
   width: 8px;

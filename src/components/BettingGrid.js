@@ -3,21 +3,18 @@ import React from 'react';
 const sports = ['boxing', 'soccer', 'hockey'];
 
 const BettingGrid = ({ matchupsCache, oddsCache, selectedBets, setSelectedBets }) => {
-  // Function to handle bet selection
   const handleBetSelection = (sport, match, outcome, odds, matchNumber, matchId) => {
     const newBet = {
-      label: `${sport.charAt(0).toUpperCase()}${matchNumber}`, // B1, B2, etc.
-      outcome, // 1, X, or 2
+      label: `${sport.charAt(0).toUpperCase()}${matchNumber}`,
+      outcome,
       odds,
-      matchId, // Include matchId from match data
+      matchId,
     };
 
-    // Check if the bet already exists
     const existingBetIndex = selectedBets.findIndex(
       (bet) => bet.label === newBet.label && bet.outcome === outcome
     );
 
-    // If bet exists, remove it; otherwise, add it
     if (existingBetIndex > -1) {
       setSelectedBets(selectedBets.filter((_, index) => index !== existingBetIndex));
     } else {
@@ -25,7 +22,6 @@ const BettingGrid = ({ matchupsCache, oddsCache, selectedBets, setSelectedBets }
     }
   };
 
-  // Function to get the odds for a specific match from the oddsCache
   const getOddsForMatch = (teamA, teamB, sport) => {
     const cacheKey = `${teamA}-${teamB}-${sport}`;
     return oddsCache[cacheKey] || null;
@@ -50,8 +46,8 @@ const BettingGrid = ({ matchupsCache, oddsCache, selectedBets, setSelectedBets }
               {matchupsCache[sport]?.length > 0 ? (
                 matchupsCache[sport].map((match, index) => {
                   const odds = getOddsForMatch(match.teamA, match.teamB, sport);
-                  const matchLabel = `${sport.charAt(0).toUpperCase()}${index + 1}`; // e.g., B1, B2 for boxing
-                  const matchId = match.matchId; // Extract matchId from match data
+                  const matchLabel = `${sport.charAt(0).toUpperCase()}${index + 1}`;
+                  const matchId = match.matchId;
 
                   return (
                     <tr key={index}>

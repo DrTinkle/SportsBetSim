@@ -1,4 +1,3 @@
-// LoadingOverlay.js
 import React from 'react';
 import './LoadingOverlay.css';
 

@@ -1,16 +1,14 @@
 import React from 'react';
 
-// Helper function to sort bets by sport order: B, S, H (Boxing, Soccer, Hockey)
 const sortBets = (a, b) => {
   const sportOrder = ['B', 'S', 'H'];
-  const aSport = a[0]; // First letter (e.g., B1 => B)
+  const aSport = a[0];
   const bSport = b[0];
 
   if (aSport !== bSport) {
-    return sportOrder.indexOf(aSport) - sportOrder.indexOf(bSport); // Sort by sport order
+    return sportOrder.indexOf(aSport) - sportOrder.indexOf(bSport);
   }
 
-  // If same sport, sort by match number (e.g., B1 vs B2)
   return parseInt(a.slice(1)) - parseInt(b.slice(1));
 };
 
@@ -21,7 +19,6 @@ const TicketManager = ({ submittedTickets }) => (
     ) : (
       <div className="submitted-tickets-list">
         {submittedTickets.map((ticket, index) => {
-          // Sort the bet lines in the same way as in BetTicket
           const sortedLabels = Object.keys(ticket.betLines).sort(sortBets);
 
           return (
@@ -39,7 +36,6 @@ const TicketManager = ({ submittedTickets }) => (
                 Potential Winnings: {ticket.potentialWinnings.min} - {ticket.potentialWinnings.max}
               </p>
 
-              {/* Display the bet lines similar to BetTicket */}
               <ul className="bet-ticket-list">
                 {sortedLabels.map((label, labelIndex) => (
                   <li key={labelIndex} className="bet-ticket-item">

@@ -5,10 +5,10 @@ import BettingModal from './BettingModal';
 import TicketsModal from './TicketsModal';
 
 const BettingParent = ({ matchupsCache, oddsCache }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Bet ticket modal
-  const [isTicketsModalOpen, setIsTicketsModalOpen] = useState(false); // Tickets modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isTicketsModalOpen, setIsTicketsModalOpen] = useState(false);
   const [selectedBets, setSelectedBets] = useState([]);
-  const [submittedTickets, setSubmittedTickets] = useState([]); // Holds all submitted tickets
+  const [submittedTickets, setSubmittedTickets] = useState([]);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -16,15 +16,13 @@ const BettingParent = ({ matchupsCache, oddsCache }) => {
   const openTicketsModal = () => setIsTicketsModalOpen(true);
   const closeTicketsModal = () => setIsTicketsModalOpen(false);
 
-  // Function to clear the bet ticket
   const clearTicket = () => {
-    setSelectedBets([]); // Clear all selected bets
+    setSelectedBets([]);
   };
 
-  // Function to finalize and save the bet ticket
   const finalizeTicket = (ticket) => {
-    setSubmittedTickets((prevTickets) => [...prevTickets, ticket]); // Add ticket to the list
-    clearTicket(); // Clear the ticket after finalizing
+    setSubmittedTickets((prevTickets) => [...prevTickets, ticket]);
+    clearTicket();
   };
 
   return (
@@ -38,7 +36,6 @@ const BettingParent = ({ matchupsCache, oddsCache }) => {
         </button>
       </div>
 
-      {/* Betting Ticket Modal */}
       <BettingModal isOpen={isModalOpen} onClose={closeModal}>
         <div className="betting-grid-container">
           <BettingGrid
@@ -59,11 +56,10 @@ const BettingParent = ({ matchupsCache, oddsCache }) => {
         </div>
       </BettingModal>
 
-      {/* Tickets Manager Modal */}
       <TicketsModal
         isOpen={isTicketsModalOpen}
         onClose={closeTicketsModal}
-        submittedTickets={submittedTickets} // Pass submitted tickets here
+        submittedTickets={submittedTickets}
       />
     </div>
   );

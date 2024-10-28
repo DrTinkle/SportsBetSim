@@ -1,4 +1,3 @@
-// ProcessNextMatchesButton.js
 import React, { useState } from 'react';
 import LoadingOverlay from './LoadingOverlay';
 
@@ -6,14 +5,13 @@ const ProcessNextMatchesButton = ({ onProcessed }) => {
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [message, setMessage] = useState('');
-  const doneDisplayTime = 3000; // Display "Done" for 2 seconds
+  const doneDisplayTime = 3000;
 
   const handleClick = async () => {
     setLoading(true);
     setMessage('');
     setProgress(0);
 
-    // Simulate a progress timer with increments every 100 ms
     const progressInterval = setInterval(() => {
       setProgress((prev) => {
         const nextProgress = prev + 10;
@@ -39,11 +37,10 @@ const ProcessNextMatchesButton = ({ onProcessed }) => {
       setMessage(`Error: ${error.message}`);
     }
 
-    // Clear the interval when progress completes or fetch finishes
     setTimeout(() => {
       clearInterval(progressInterval);
       setLoading(false);
-      setTimeout(() => setMessage(''), doneDisplayTime); // Hide "Done" message after display time
+      setTimeout(() => setMessage(''), doneDisplayTime);
     }, doneDisplayTime);
   };
 
@@ -53,7 +50,7 @@ const ProcessNextMatchesButton = ({ onProcessed }) => {
         {loading ? 'Processing...' : 'Next Day'}
       </button>
       {message && <p>{message}</p>}
-      {loading && <LoadingOverlay progress={progress} />} {/* Pass progress to LoadingOverlay */}
+      {loading && <LoadingOverlay progress={progress} />}
     </div>
   );
 };
