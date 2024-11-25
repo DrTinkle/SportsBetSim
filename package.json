@@ -26,6 +26,7 @@
       "react-app/jest"
     ]
   },
+  "proxy": "https://sportsbetsim-back.onrender.com",
   "browserslist": {
     "production": [
       ">0.2%",
