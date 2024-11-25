@@ -1,33 +1,11 @@
-const { compareStats, generateScore } = require('../../shared/calculations');
-const fs = require('fs');
-const path = require('path');
-const rootPath = path.join(__dirname, '../');
-let matchCounter = 1;
+const { compareStats, generateScore } = require('../calculations/calculations');
+const { loadJsonData, saveJsonData } = require('../utils/json_helpers');
 
+let matchCounter = 1;
 let teamHistory = [];
 let matchHistory = [];
 
-function loadJsonData(filePath) {
-  const fullPath = path.join(rootPath, 'data', filePath);
-
-  if (!fs.existsSync(fullPath)) {
-    throw new Error(`${filePath} not found. Please run the team randomizer first.`);
-  }
-
-  const data = fs.readFileSync(fullPath);
-  return JSON.parse(data);
-}
-
-function saveJsonData(filePath, data) {
-  const fullPath = path.join(rootPath, 'data', filePath);
-  try {
-    fs.writeFileSync(fullPath, JSON.stringify(data, null, 2));
-  } catch (error) {
-    console.error(`Error saving file ${fullPath}:`, error);
-  }
-}
-
-function generateSchedule() {
+function generateSchedule(iterations = 1) {
   const teamsData = loadJsonData('teams.json');
   let scheduleData = {};
   let matchHistoryData = {};
@@ -36,8 +14,19 @@ function generateSchedule() {
     scheduleData[sport.sport] = {
       matchups: generateTournamentSchedule(sport.teams),
     };
+
+    let pastMatchups = [];
+    for (let i = 0; i < iterations; i++) {
+      const startOrder = pastMatchups.length + 1;
+      const currentMatchups = generateTournamentSchedule(sport.teams).map((match, index) => ({
+        ...match,
+        order: startOrder + index,
+      }));
+      pastMatchups = pastMatchups.concat(currentMatchups);
+    }
+
     matchHistoryData[sport.sport] = {
-      matchups: generateTournamentSchedule(sport.teams),
+      matchups: pastMatchups,
     };
   });
 
@@ -106,29 +95,48 @@ function randomizePastMatchResults(scheduleData) {
   Object.entries(scheduleData).forEach(([sport, sportData]) => {
     if (sportData.matchups) {
       sportData.matchups.forEach((match, index) => {
-        const teamA = teamHistory[match.teamA] || {};
-        const teamB = teamHistory[match.teamB] || {};
+        const teamA = match.teamA;
+        const teamB = match.teamB;
 
-        const { scoreA, scoreB } = compareStats(teamA, teamB);
+        const { scoreA, scoreB } = compareStats(teamHistory[teamA] || {}, teamHistory[teamB] || {});
         const { scoreTeamA, scoreTeamB } = generateScore(sport, scoreA, scoreB);
 
         match.scoreTeamA = scoreTeamA;
         match.scoreTeamB = scoreTeamB;
-        match.winner =
-          scoreTeamA > scoreTeamB ? match.teamA : scoreTeamB > scoreTeamA ? match.teamB : 'draw';
+        match.winner = scoreTeamA > scoreTeamB ? teamA : scoreTeamB > scoreTeamA ? teamB : 'draw';
         match.order = index + 1;
         match.matchId = match.matchId || `match_${matchHistory.length + 1}`;
 
-        if (!teamHistory[match.teamA]) {
-          teamHistory[match.teamA] = { matches: [] };
+        if (!teamHistory[teamA]) {
+          teamHistory[teamA] = { matches: [], wins: 0, losses: 0, ties: 0, totalPoints: 0 };
         }
-        if (!teamHistory[match.teamB]) {
-          teamHistory[match.teamB] = { matches: [] };
+        if (!teamHistory[teamB]) {
+          teamHistory[teamB] = { matches: [], wins: 0, losses: 0, ties: 0, totalPoints: 0 };
         }
-        teamHistory[match.teamA].matches.push(match.matchId);
-        teamHistory[match.teamB].matches.push(match.matchId);
+
+        if (match.winner === teamA) {
+          teamHistory[teamA].wins += 1;
+          teamHistory[teamB].losses += 1;
+        } else if (match.winner === teamB) {
+          teamHistory[teamB].wins += 1;
+          teamHistory[teamA].losses += 1;
+        } else {
+          teamHistory[teamA].ties += 1;
+          teamHistory[teamB].ties += 1;
+        }
+
+        teamHistory[teamA].totalPoints += scoreTeamA;
+        teamHistory[teamB].totalPoints += scoreTeamB;
+
+        teamHistory[teamA].matches.push(match.matchId);
+        teamHistory[teamB].matches.push(match.matchId);
       });
     }
+  });
+
+  Object.entries(teamHistory).forEach(([teamName, team]) => {
+    const totalMatches = team.wins + team.losses + team.ties;
+    team.pointsPerMatch = totalMatches ? (team.totalPoints / totalMatches).toFixed(2) : 0;
   });
 
   saveJsonData('match_history.json', scheduleData);
@@ -142,11 +150,20 @@ function clearHistories() {
 
   teamHistory = {};
   saveJsonData('team_history.json', teamHistory);
+
   console.log('Team and match history cleared.');
+
+  let tickets = [];
+  let ticketArchive = [];
+
+  saveJsonData('tickets.json', tickets);
+  saveJsonData('ticket_archive.json', ticketArchive);
+
+  console.log('Betting tickets and archive cleared.');
 }
 
 try {
-  generateSchedule();
+  generateSchedule(2);
 } catch (error) {
   console.error(error.message);
 }

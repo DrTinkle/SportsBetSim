@@ -6,6 +6,7 @@ const TeamList = () => {
   const [selectedTeam, setSelectedTeam] = useState('');
   const [loading, setLoading] = useState(true);
   const [matchHistory, setMatchHistory] = useState([]);
+  const [teamStats, setTeamStats] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [filterText, setFilterText] = useState('');
 
@@ -29,6 +30,7 @@ const TeamList = () => {
     setSelectedSport(e.target.value);
     setSelectedTeam('');
     setMatchHistory([]);
+    setTeamStats(null);
     setShowModal(false);
   };
 
@@ -39,10 +41,12 @@ const TeamList = () => {
     try {
       const response = await fetch(`/api/team-match-history/${team}`);
       const data = await response.json();
-      setMatchHistory(data);
+      setMatchHistory(data.matches || []);
+      setTeamStats(data.stats || null);
     } catch (error) {
       console.error('Error fetching match history:', error);
       setMatchHistory([]);
+      setTeamStats(null);
     }
   };
 
@@ -102,45 +106,84 @@ const TeamList = () => {
             <span className="close" onClick={closeModal}>
               &times;
             </span>
-            <h3>Match History for {selectedTeam}</h3>
+            <h3 className="team-modal-header">Match History for {selectedTeam}</h3>
 
-            <input
-              type="text"
-              placeholder="Filter by team name..."
-              value={filterText}
-              onChange={(e) => setFilterText(e.target.value)}
-              className="filter-input"
-            />
-
-            <ul>
-              {filteredMatches.length > 0 ? (
-                filteredMatches.map((match, index) => (
-                  <li key={index} className="team-history-item">
-                    {match.winner === match.teamA ? (
-                      <strong className="team-history-match-winner">
-                        {match.teamA} {match.scoreTeamA}
-                      </strong>
-                    ) : (
-                      <span>
-                        {match.teamA} {match.scoreTeamA}
-                      </span>
-                    )}{' '}
-                    -{' '}
-                    {match.winner === match.teamB ? (
-                      <strong className="team-history-match-winner">
-                        {match.scoreTeamB} {match.teamB}
-                      </strong>
-                    ) : (
-                      <span>
-                        {match.scoreTeamB} {match.teamB}
-                      </span>
-                    )}
-                  </li>
-                ))
-              ) : (
-                <li>No matches found for "{filterText}".</li>
+            <div className="team-history-grid">
+              {teamStats && (
+                <div className="team-stats-container">
+                  {selectedTeam && (
+                    <img
+                      src={`/images/${selectedTeam.toLowerCase().replace(/\s+/g, '_')}.jpg`}
+                      alt={selectedTeam}
+                      className="team-modal-image"
+                      loading="lazy"
+                    />
+                  )}
+                  <div className="team-stats-grid">
+                    <div className="team-stats-labels">
+                      <p>
+                        <strong>Wins:</strong>
+                      </p>
+                      <p>
+                        <strong>Losses:</strong>
+                      </p>
+                      <p>
+                        <strong>Ties:</strong>
+                      </p>
+                      <p>
+                        <strong>Points Per Match:</strong>
+                      </p>
+                    </div>
+                    <div className="team-stats-values">
+                      <p>{teamStats.wins}</p>
+                      <p>{teamStats.losses}</p>
+                      <p>{teamStats.ties}</p>
+                      <p>{teamStats.pointsPerMatch}</p>
+                    </div>
+                  </div>
+                </div>
               )}
-            </ul>
+
+              <div className="team-match-history">
+                <input
+                  type="text"
+                  placeholder="Filter by team name..."
+                  value={filterText}
+                  onChange={(e) => setFilterText(e.target.value)}
+                  className="filter-input"
+                />
+
+                <ul>
+                  {filteredMatches.length > 0 ? (
+                    filteredMatches.map((match, index) => (
+                      <li key={index} className="team-history-item">
+                        {match.winner === match.teamA ? (
+                          <strong className="team-history-match-winner">
+                            {match.teamA} {match.scoreTeamA}
+                          </strong>
+                        ) : (
+                          <span>
+                            {match.teamA} {match.scoreTeamA}
+                          </span>
+                        )}{' '}
+                        -{' '}
+                        {match.winner === match.teamB ? (
+                          <strong className="team-history-match-winner">
+                            {match.scoreTeamB} {match.teamB}
+                          </strong>
+                        ) : (
+                          <span>
+                            {match.scoreTeamB} {match.teamB}
+                          </span>
+                        )}
+                      </li>
+                    ))
+                  ) : (
+                    <li>No matches found for "{filterText}".</li>
+                  )}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       )}

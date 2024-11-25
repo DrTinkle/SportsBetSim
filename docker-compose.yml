@@ -1,0 +1,47 @@
+services:
+  backend:
+    build:
+      context: ./back
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    environment:
+      - NODE_ENV=development
+    networks:
+      - app-network
+    develop:
+      watch:
+        - action: sync
+          path: ./back
+          target: /app
+          ignore:
+            - node_modules/
+            - data/team_names.json
+        - action: rebuild
+          path: package.json
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - '3000:80'
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - app-network
+    develop:
+      watch:
+        - action: sync
+          path: ./src/components
+          target: /app/src/components
+          ignore:
+            - node_modules/
+            - build/
+        - action: rebuild
+          path: package.json
+
+networks:
+  app-network:
+    driver: bridge

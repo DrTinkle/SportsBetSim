@@ -10,6 +10,12 @@ body {
   text-align: center;
 }
 
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .process-next-matches-container {
   margin-top: 20px;
   text-align: center;
@@ -23,6 +29,7 @@ body {
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
+  font-weight: 800;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -36,6 +43,32 @@ body {
 }
 
 .process-next-matches-button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+}
+
+.account-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #b30000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.account-button:hover {
+  background-color: #e60000;
+  box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+.account-button:disabled {
   background-color: #333;
   cursor: not-allowed;
 }
@@ -60,11 +93,11 @@ body {
   }
 }
 
-p {
+/* p {
   margin-top: 10px;
   font-size: 14px;
   color: #e6e6e6;
-}
+} */
 
 .next-matchups-header,
 .team-stats-header,
@@ -107,7 +140,7 @@ p {
 
 .matchups-sport-header {
   text-align: center;
-  color: #ff0000;
+  color: rgb(240, 255, 255);
 }
 
 .next-matchups-list {
@@ -120,7 +153,7 @@ p {
 .next-matchups-list li {
   position: relative;
   padding-left: 5em;
-  color: #ff6666;
+  color: #f87c7c;
   padding: 15px;
 }
 
@@ -243,7 +276,23 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.team-modal-header {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e6e6e6;
+}
+
+.team-modal-image {
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ff3333;
 }
 
 .modal-content {
@@ -251,9 +300,49 @@ p {
   padding: 20px;
   border-radius: 8px;
   width: 80%;
-  max-width: 600px;
+  max-width: 800px;
   color: #ffcccc;
   box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.3);
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.team-history-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.team-stats-container {
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+}
+
+.team-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  padding: 20px;
+  margin-right: 10px;
+  margin-bottom: auto;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #ffcccc;
+  box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.2);
+}
+
+.team-stats-labels {
+  text-align: right;
+  font-weight: bold;
+}
+
+.team-stats-values {
+  text-align: center;
+}
+
+team-match-history {
+  max-height: 90%;
+  overflow-y: auto;
 }
 
 .team-history-match-winner {
@@ -296,6 +385,24 @@ p {
   color: white;
   padding: 10px 20px;
   font-size: 16px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.tickets-archive-button-container {
+  margin-top: 40px;
+  justify-self: center;
+}
+
+.archived-tickets-button {
+  background-color: #b30000;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -303,6 +410,12 @@ p {
 }
 
 .bet-ticket-button:hover,
-.show-bet-tickets-button:hover {
+.show-bet-tickets-button:hover,
+.archived-tickets-button:hover {
   background-color: #e60000;
+}
+
+.ticket-details-text {
+  color: #1a1a1a;
+  font-size: 0.8rem;
 }

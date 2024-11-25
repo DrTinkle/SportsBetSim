@@ -1,0 +1,5 @@
+# Ignore all JSON data files except team_names.json
+data/match_history.json
+data/schedule.json
+data/team_history.json
+data/teams.json

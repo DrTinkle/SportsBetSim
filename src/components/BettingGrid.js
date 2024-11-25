@@ -9,6 +9,8 @@ const BettingGrid = ({ matchupsCache, oddsCache, selectedBets, setSelectedBets }
       outcome,
       odds,
       matchId,
+      teamA: match.teamA,
+      teamB: match.teamB,
     };
 
     const existingBetIndex = selectedBets.findIndex(

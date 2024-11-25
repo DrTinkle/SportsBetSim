@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const rootPath = path.join(__dirname, '../');
-const { compareStats } = require('../../shared/calculations');
+const { compareStats } = require('./calculations');
 
 function loadJsonData(filePath) {
   const fullPath = path.join(rootPath, '/data', filePath);

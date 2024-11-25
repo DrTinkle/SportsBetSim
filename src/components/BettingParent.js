@@ -3,12 +3,15 @@ import BettingGrid from './BettingGrid';
 import BetTicket from './BetTicket';
 import BettingModal from './BettingModal';
 import TicketsModal from './TicketsModal';
+import ArchivedTicketsModal from './ArchivedTicketsModal';
 
-const BettingParent = ({ matchupsCache, oddsCache }) => {
+const BettingParent = ({ matchupsCache, oddsCache, updateBankData }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isTicketsModalOpen, setIsTicketsModalOpen] = useState(false);
   const [selectedBets, setSelectedBets] = useState([]);
   const [submittedTickets, setSubmittedTickets] = useState([]);
+  const [refreshBalanceTrigger, setRefreshBalanceTrigger] = useState(false);
+  const [isArchiveModalOpen, setIsArchiveModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -23,6 +26,7 @@ const BettingParent = ({ matchupsCache, oddsCache }) => {
   const finalizeTicket = (ticket) => {
     setSubmittedTickets((prevTickets) => [...prevTickets, ticket]);
     clearTicket();
+    setRefreshBalanceTrigger((prev) => !prev);
   };
 
   return (
@@ -32,11 +36,19 @@ const BettingParent = ({ matchupsCache, oddsCache }) => {
           Open Bet Ticket
         </button>
         <button className="show-bet-tickets-button" onClick={openTicketsModal}>
-          Your Bet Tickets
+          View Your Bet Tickets
         </button>
       </div>
-
-      <BettingModal isOpen={isModalOpen} onClose={closeModal}>
+      <div className="tickets-archive-button-container">
+        <button className="archived-tickets-button" onClick={() => setIsArchiveModalOpen(true)}>
+          View Archived Tickets
+        </button>
+      </div>
+      <BettingModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        refreshBalanceTrigger={refreshBalanceTrigger}
+      >
         <div className="betting-grid-container">
           <BettingGrid
             matchupsCache={matchupsCache}
@@ -52,15 +64,20 @@ const BettingParent = ({ matchupsCache, oddsCache }) => {
             matchupsCache={matchupsCache}
             clearTicket={clearTicket}
             finalizeTicket={finalizeTicket}
+            updateBankData={updateBankData}
           />
         </div>
       </BettingModal>
-
       <TicketsModal
         isOpen={isTicketsModalOpen}
         onClose={closeTicketsModal}
         submittedTickets={submittedTickets}
       />
+      <ArchivedTicketsModal
+        isOpen={isArchiveModalOpen}
+        onClose={() => setIsArchiveModalOpen(false)}
+      />
+      ;
     </div>
   );
 };

@@ -28,7 +28,8 @@
   align-self: flex-end;
   background: transparent;
   border: none;
-  font-size: 1.8rem;
+  font-size: 28px;
+  font-weight: bold;
   cursor: pointer;
   color: #ff6666;
   transition: color 0.3s ease;
@@ -156,7 +157,7 @@
   align-items: center;
   padding: 12px 0;
   border-bottom: 1px solid #4d0000;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #000000;
 }
 
@@ -181,8 +182,8 @@
 .bet-ticket-footer {
   margin-top: 20px;
   font-weight: bold;
-  text-align: center;
-  color: #ff6666;
+  text-align: left;
+  color: #1a1a1a;
 }
 
 .bet-ticket-footer p {
@@ -204,4 +205,41 @@
 .betting-grid-container::-webkit-scrollbar-thumb:hover,
 .bet-ticket-container::-webkit-scrollbar-thumb:hover {
   background-color: #b30000;
+}
+
+.finalize-ticket-button {
+  background-color: #b30000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finalize-ticket-button:hover {
+  background-color: #ff1a1a;
+}
+
+.clear-ticket-button {
+  background-color: #ffcccc;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-ticket-button:hover {
+  background-color: #ff9999;
+}
+
+.ticket-buttons-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.betting-modal-account-balance {
+  text-align: right;
 }

@@ -1,49 +1,37 @@
 const fs = require('fs');
-const path = require('path');
 
-const teamsFilePath = path.join(__dirname, '../data/teams.json');
-const teamNamesFilePath = path.join(__dirname, '../data/team_names.json');
+const { loadJsonData, saveJsonData } = require('../utils/json_helpers');
+const teamsFilePath = '../data/teams.json';
+const teamNamesFilePath = '../data/team_names.json';
 
 let teamsData;
 
 if (!fs.existsSync(teamsFilePath)) {
   console.log('teams.json not found. Generating from team_names.json...');
 
-  let teamNamesData;
-  try {
-    teamNamesData = JSON.parse(fs.readFileSync(teamNamesFilePath, 'utf8'));
-  } catch (error) {
-    console.error('Error reading team names data:', error);
+  const teamNamesData = loadJsonData(teamNamesFilePath);
+  if (!teamNamesData) {
     process.exit(1);
   }
 
-  teamsData = teamNamesData.map((sport) => {
-    return {
-      sport: sport.sport,
-      teams: sport.teams.map((teamName) => ({
-        name: teamName,
-        speed: 0,
-        agility: 0,
-        attack: 0,
-        defense: 0,
-        overall: 0,
-        randomized: false,
-      })),
-    };
-  });
+  teamsData = teamNamesData.map((sport) => ({
+    sport: sport.sport,
+    teams: sport.teams.map((teamName) => ({
+      name: teamName,
+      speed: 0,
+      agility: 0,
+      attack: 0,
+      defense: 0,
+      overall: 0,
+      randomized: false,
+    })),
+  }));
 
-  try {
-    fs.writeFileSync(teamsFilePath, JSON.stringify(teamsData, null, 2));
-    console.log('teams.json has been generated.');
-  } catch (error) {
-    console.error('Error writing teams.json:', error);
-    process.exit(1);
-  }
+  saveJsonData(teamsFilePath, teamsData);
+  console.log('teams.json has been generated.');
 } else {
-  try {
-    teamsData = JSON.parse(fs.readFileSync(teamsFilePath, 'utf8'));
-  } catch (error) {
-    console.error('Error reading teams data:', error);
+  teamsData = loadJsonData(teamsFilePath);
+  if (!teamsData) {
     process.exit(1);
   }
 }
@@ -65,9 +53,5 @@ teamsData.forEach((sport) => {
   });
 });
 
-try {
-  fs.writeFileSync(teamsFilePath, JSON.stringify(teamsData, null, 2));
-  console.log('Teams stats have been randomized and updated.');
-} catch (error) {
-  console.error('Error writing teams data:', error);
-}
+saveJsonData(teamsFilePath, teamsData);
+console.log('Teams stats have been randomized and updated.');

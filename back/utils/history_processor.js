@@ -1,11 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
-const loadJsonData = (fileName) => {
-  const filePath = path.join(__dirname, '../data', fileName);
-  const data = fs.readFileSync(filePath, 'utf-8');
-  return JSON.parse(data);
-};
+const { loadJsonData } = require('./json_helpers');
 
 const getTeamMatchHistory = (teamName) => {
   const teamHistory = loadJsonData('team_history.json');
@@ -15,7 +8,8 @@ const getTeamMatchHistory = (teamName) => {
     return { error: 'Team not found' };
   }
 
-  const teamMatchIds = teamHistory[teamName].matches;
+  const teamData = teamHistory[teamName];
+  const teamMatchIds = teamData.matches;
 
   const matches = [];
   Object.keys(matchHistory).forEach((sport) => {
@@ -26,7 +20,20 @@ const getTeamMatchHistory = (teamName) => {
     });
   });
 
-  return matches.length > 0 ? matches : { error: 'No match history found for this team' };
+  const totalMatches = teamData.wins + teamData.losses + teamData.ties;
+  const pointsPerMatch = totalMatches > 0 ? (teamData.totalPoints / totalMatches).toFixed(2) : 0;
+
+  return {
+    teamName,
+    matches: matches.length > 0 ? matches : [],
+    stats: {
+      wins: teamData.wins,
+      losses: teamData.losses,
+      ties: teamData.ties,
+      totalPoints: teamData.totalPoints,
+      pointsPerMatch,
+    },
+  };
 };
 
 module.exports = { getTeamMatchHistory };

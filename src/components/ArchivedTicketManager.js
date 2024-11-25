@@ -13,15 +13,15 @@ const sortBets = (a, b) => {
   return parseInt(a.slice(1)) - parseInt(b.slice(1));
 };
 
-const TicketManager = () => {
-  const [submittedTickets, setSubmittedTickets] = useState([]);
+const ArchivedTicketManager = () => {
+  const [archivedTickets, setArchivedTickets] = useState([]);
   const [flippedTickets, setFlippedTickets] = useState({});
 
   useEffect(() => {
-    fetch('/api/getTickets')
+    fetch('/api/tickets/archived')
       .then((response) => response.json())
-      .then((data) => setSubmittedTickets(data))
-      .catch((error) => console.error('Error fetching tickets:', error));
+      .then((data) => setArchivedTickets(data))
+      .catch((error) => console.error('Error fetching archived tickets:', error));
   }, []);
 
   const toggleFlip = (index) => {
@@ -31,36 +31,28 @@ const TicketManager = () => {
     }));
   };
 
+  const handleDeleteArchivedTicket = (ticketId) => {
+    fetch(`/api/tickets/archived/${ticketId}`, { method: 'DELETE' })
+      .then(() => {
+        setArchivedTickets((prev) => prev.filter((ticket) => ticket.ticketId !== ticketId));
+      })
+      .catch((error) => console.error('Error deleting archived ticket:', error));
+  };
+
   const getTicketStatus = (ticket) => {
     if (!ticket.ticketProcessed) return 'Pending';
     return ticket.totalWinnings > 0 ? 'Win' : 'Lose';
   };
 
-  const handleTrashTicket = (ticketId) => {
-    fetch(`/api/tickets/${ticketId}`, { method: 'DELETE' })
-      .then(() => {
-        setSubmittedTickets((prev) => prev.filter((ticket) => ticket.ticketId !== ticketId));
-      })
-      .catch((error) => console.error('Error deleting ticket:', error));
-  };
-
-  const handleArchiveTicket = (ticketId) => {
-    fetch(`/api/tickets/${ticketId}/archive`, { method: 'POST' })
-      .then(() => {
-        setSubmittedTickets((prev) => prev.filter((ticket) => ticket.ticketId !== ticketId));
-      })
-      .catch((error) => console.error('Error archiving ticket:', error));
-  };
-
   return (
     <div className="ticket-manager">
-      {submittedTickets.length === 0 ? (
-        <div>No submitted tickets yet.</div>
+      {archivedTickets.length === 0 ? (
+        <div>No archived tickets yet.</div>
       ) : (
         <div className="submitted-tickets-container">
           <p className="click-tickets-text">Click ticket to view ticket matchups.</p>
           <div className="submitted-tickets-list">
-            {submittedTickets.map((ticket, index) => {
+            {archivedTickets.map((ticket, index) => {
               const sortedLabels = Object.keys(ticket.betLines).sort(sortBets);
               const ticketStatus = getTicketStatus(ticket);
 
@@ -137,28 +129,17 @@ const TicketManager = () => {
                         </p>
                       </div>
 
-                      {ticket.ticketProcessed && (
-                        <div className="ticket-actions">
-                          <button
-                            className="archive-ticket-button"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleArchiveTicket(ticket.ticketId);
-                            }}
-                          >
-                            Archive
-                          </button>
-                          <button
-                            className="trash-ticket-button"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleTrashTicket(ticket.ticketId);
-                            }}
-                          >
-                            Trash
-                          </button>
-                        </div>
-                      )}
+                      <div className="ticket-actions">
+                        <button
+                          className="trash-ticket-button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleDeleteArchivedTicket(ticket.ticketId);
+                          }}
+                        >
+                          Delete
+                        </button>
+                      </div>
                     </>
                   )}
                 </div>
@@ -171,4 +152,4 @@ const TicketManager = () => {
   );
 };
 
-export default TicketManager;
+export default ArchivedTicketManager;

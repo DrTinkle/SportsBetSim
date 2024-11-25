@@ -32,7 +32,7 @@ const MatchHistory = ({ refreshKey }) => {
       <div className="match-history-grid">
         {sports.map((sport, index) => (
           <div key={index} className="match-history-sport-section">
-            <h3>{sport.charAt(0).toUpperCase() + sport.slice(1)}</h3>
+            <h3 class="matchups-sport-header">{sport.charAt(0).toUpperCase() + sport.slice(1)}</h3>
             <ul className="match-history-list">
               {history[sport] && history[sport].length > 0 ? (
                 history[sport]
