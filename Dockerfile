@@ -14,12 +14,13 @@ RUN npm install
 
 # Final Stage: Set up Nginx to serve the frontend and reverse-proxy the backend
 FROM nginx:alpine
+ENV PORT=80
 COPY --from=builder /app/build /usr/share/nginx/html
 COPY --from=backend /app/back /app/back
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose ports
-EXPOSE 80
+# Expose the port
+EXPOSE ${PORT}
 
 # Start both Nginx and the backend
 CMD ["sh", "-c", "node /app/back/server.js & nginx -g 'daemon off;'"]
