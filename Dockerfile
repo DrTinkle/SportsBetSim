@@ -10,6 +10,9 @@ RUN npm run build
 FROM node:18
 WORKDIR /app
 
+# Install Nginx
+RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
+
 # Copy React build files to Nginx's static directory
 COPY --from=builder /app/build /usr/share/nginx/html
 
