@@ -6,21 +6,24 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Stage 2: Set up backend and Nginx for serving frontend
-FROM node:18 AS backend
-WORKDIR /app/back
+# Final Stage: Combine backend and Nginx
+FROM node:18
+WORKDIR /app
+
+# Copy React build files to Nginx's static directory
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Copy backend files
 COPY back /app/back
+WORKDIR /app/back
 RUN npm install
 
-# Final Stage: Set up Nginx to serve the frontend and reverse-proxy the backend
-FROM nginx:alpine
-ENV PORT=80
-COPY --from=builder /app/build /usr/share/nginx/html
-COPY --from=backend /app/back /app/back
+# Copy the Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose the port
-EXPOSE ${PORT}
+# Expose Render's PORT
+ENV PORT=5000
+EXPOSE 5000
 
-# Start both Nginx and the backend
+# Start the backend and Nginx
 CMD ["sh", "-c", "node /app/back/server.js & nginx -g 'daemon off;'"]
