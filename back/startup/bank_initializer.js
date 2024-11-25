@@ -4,7 +4,7 @@ const path = require('path');
 const bankFilePath = path.join(__dirname, '../data/bank.json');
 
 const defaultBankData = {
-  balance: 1000,
+  balance: 2000,
   loans: [
     {
       amount: 2000,
