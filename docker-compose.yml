@@ -1,28 +1,10 @@
 version: '3.8'
 services:
-  backend:
+  app:
     build:
-      context: ./back
+      context: .
       dockerfile: Dockerfile
     ports:
       - '5000:5000'
     environment:
-      - NODE_ENV=production
-    networks:
-      - app-network
-
-  frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile.frontend
-    ports:
-      - '3000:80'
-    environment:
-      - NODE_ENV=production
-      - CHOKIDAR_USEPOLLING=true
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge
+      NODE_ENV: production
