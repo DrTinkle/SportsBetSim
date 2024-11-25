@@ -3,3 +3,21 @@ data/match_history.json
 data/schedule.json
 data/team_history.json
 data/teams.json
+data/bank.json
+data/ticket_archive.json
+data/tickets.json
+
+# Ignore node_modules
+node_modules
+
+# Ignore local environment files
+.env
+.env.local
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Git files
+.git
+.gitignore
