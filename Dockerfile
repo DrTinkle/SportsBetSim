@@ -1,25 +1,23 @@
-# Use a Node.js image
-FROM node:18
-
-# Set the working directory
+# Build the React app
+FROM node:18 AS builder
 WORKDIR /app
-
-# Copy package files for both frontend and backend
 COPY package.json package-lock.json ./
-COPY back/package.json back/package.json
-
-# Install dependencies for both frontend and backend
 RUN npm install
-RUN cd back && npm install
-
-# Copy the source files
 COPY . .
-
-# Build the frontend
 RUN npm run build
 
-# Expose the port for the backend
-EXPOSE 5000
+# Set up Nginx for frontend and backend
+FROM nginx:alpine
+COPY --from=builder /app/build /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Start the server
-CMD ["node", "back/server.js"]
+# Copy the backend to the container
+COPY back /app/back
+WORKDIR /app/back
+RUN npm install
+
+# Expose ports
+EXPOSE 80
+
+# Start both Nginx and the backend
+CMD ["sh", "-c", "node server.js & nginx -g 'daemon off;'"]
