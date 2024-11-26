@@ -139,7 +139,7 @@ dist
 .yarn/install-state.gz
 
 # generated .json data
-back/data/
+back/data/*.json
 
 # Docker files
 docker-compose.override.yml
