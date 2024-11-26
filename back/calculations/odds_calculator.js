@@ -1,22 +1,5 @@
-const fs = require('fs');
-const path = require('path');
-const rootPath = path.join(__dirname, '../');
+const { loadJsonData, saveJsonData } = require('../utils/json_helpers');
 const { compareStats } = require('./calculations');
-
-function loadJsonData(filePath) {
-  const fullPath = path.join(rootPath, '/data', filePath);
-  try {
-    return JSON.parse(fs.readFileSync(fullPath, 'utf8'));
-  } catch (error) {
-    console.error(`Error loading JSON from ${filePath}:`, error);
-    return [];
-  }
-}
-
-function saveJsonData(filePath, data) {
-  const fullPath = path.join(rootPath, '/data', filePath);
-  fs.writeFileSync(fullPath, JSON.stringify(data, null, 2), 'utf8');
-}
 
 function findTeam(teamsData, teamName) {
   for (const sportData of teamsData) {
@@ -28,9 +11,9 @@ function findTeam(teamsData, teamName) {
   return null;
 }
 
-async function calculateOddsForMatchup(teamA, teamB, isNextMatch = false, sport = '') {
-  const teamStats = await gatherTeamStats(teamA, teamB);
-  const teamsData = loadJsonData('teams.json');
+async function calculateOddsForMatchup(teamA, teamB, isNextMatch = false, sport = '', req) {
+  const teamStats = await gatherTeamStats(teamA, teamB, req);
+  const teamsData = loadJsonData('teams.json', req);
 
   const teamAData = findTeam(teamsData, teamA);
   const teamBData = findTeam(teamsData, teamB);
@@ -123,7 +106,7 @@ async function calculateOddsForMatchup(teamA, teamB, isNextMatch = false, sport 
     };
 
     if (isNextMatch && sport) {
-      const scheduleData = loadJsonData('schedule.json');
+      const scheduleData = loadJsonData('schedule.json', req);
       const nextMatch = scheduleData[sport]?.matchups[0];
 
       if (nextMatch && !nextMatch.oddsTeamA && !nextMatch.oddsTeamB && !nextMatch.oddsDraw) {
@@ -131,7 +114,7 @@ async function calculateOddsForMatchup(teamA, teamB, isNextMatch = false, sport 
         nextMatch.oddsDraw = odds.oddsDraw;
         nextMatch.oddsTeamB = odds.oddsTeamB;
 
-        saveJsonData('schedule.json', scheduleData);
+        saveJsonData('schedule.json', scheduleData, req);
         console.log(`Odds saved to schedule.json for the next match: ${teamA} vs ${teamB}`);
       }
     }
@@ -149,9 +132,9 @@ async function calculateOddsForMatchup(teamA, teamB, isNextMatch = false, sport 
   }
 }
 
-async function gatherTeamStats(teamA, teamB) {
-  const teamHistory = await loadJsonData('team_history.json');
-  const matchHistory = await loadJsonData('match_history.json');
+async function gatherTeamStats(teamA, teamB, req) {
+  const teamHistory = loadJsonData('team_history.json', req);
+  const matchHistory = loadJsonData('match_history.json', req);
 
   let headToHeadTotalScoreTeamA = 0;
   let headToHeadTotalScoreTeamB = 0;

@@ -138,14 +138,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 
-# generated .json files
-.back/data/bank.json
-.back/data/match_history.json
-.back/data/schedule.json
-.back/data/team_history.json
-.back/data/teams.json
-.back/data/ticket_archive.json
-.back/data/tickets.json
+# generated .json data
+back/data/
 
 # Docker files
 docker-compose.override.yml

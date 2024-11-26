@@ -1,9 +1,7 @@
-const fs = require('fs');
-const path = require('path');
+const { loadJsonData } = require('./json_helpers');
 
-const getNextMatchups = (sport) => {
-  const schedulePath = path.join(__dirname, '../data/schedule.json');
-  const scheduleData = JSON.parse(fs.readFileSync(schedulePath, 'utf8'));
+const getNextMatchups = (sport, req) => {
+  const scheduleData = loadJsonData('schedule.json', req);
 
   if (!scheduleData[sport]) {
     return [];

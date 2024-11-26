@@ -24,14 +24,14 @@ function generateCombinations(betsPerMatch) {
   return result;
 }
 
-function processBets() {
+function processBets(req) {
   const ticketsFilePath = 'tickets.json';
   const matchHistoryFilePath = 'match_history.json';
   const bankFilePath = 'bank.json';
 
-  const tickets = loadJsonData(ticketsFilePath);
-  const matchHistory = loadJsonData(matchHistoryFilePath);
-  const bankData = loadJsonData(bankFilePath);
+  const tickets = loadJsonData(ticketsFilePath, req);
+  const matchHistory = loadJsonData(matchHistoryFilePath, req);
+  const bankData = loadJsonData(bankFilePath, req);
 
   tickets.forEach((ticket) => {
     if (ticket.ticketProcessed) {
@@ -105,8 +105,8 @@ function processBets() {
     }
   });
 
-  saveJsonData(ticketsFilePath, tickets);
-  saveJsonData(bankFilePath, bankData);
+  saveJsonData(ticketsFilePath, tickets, req);
+  saveJsonData(bankFilePath, bankData, req);
   console.log('Bet processing complete.');
 }
 

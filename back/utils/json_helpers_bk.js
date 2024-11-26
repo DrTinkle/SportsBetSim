@@ -5,11 +5,12 @@ function getFilePath(filePath, playerID) {
   if (playerID) {
     const playerIDFilePath = `player_${playerID}_${filePath}`;
     const playerIDPath = path.join(__dirname, '../data/', playerIDFilePath);
-    // console.log(`Path: ${playerIDPath}`);
+
+    console.log(`To Path: ${playerIDPath}`);
     return playerIDPath;
   }
   const defaultPath = path.join(__dirname, '../data/', filePath);
-  // console.log(`Path: ${defaultPath}`);
+  console.log(`To Path: ${defaultPath}`);
   return defaultPath;
 }
 

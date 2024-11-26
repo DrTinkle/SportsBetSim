@@ -11,15 +11,15 @@ function getLatestOrder(matchHistory, sport) {
   return 0;
 }
 
-function processNextMatches() {
-  const scheduleData = loadJsonData('schedule.json');
-  let matchHistoryData = loadJsonData('match_history.json');
-  let teamHistoryData = loadJsonData('team_history.json');
+function processNextMatches(req) {
+  const scheduleData = loadJsonData('schedule.json', req);
+  let matchHistoryData = loadJsonData('match_history.json', req);
+  let teamHistoryData = loadJsonData('team_history.json', req);
 
   Object.keys(scheduleData).forEach((sport) => {
     const sportMatchups = scheduleData[sport]?.matchups;
 
-    if (sportMatchups.length > 0) {
+    if (sportMatchups && sportMatchups.length > 0) {
       const nextMatch = sportMatchups.shift();
       const { teamA, teamB } = nextMatch;
 
@@ -81,9 +81,9 @@ function processNextMatches() {
     }
   });
 
-  saveJsonData('schedule.json', scheduleData);
-  saveJsonData('match_history.json', matchHistoryData);
-  saveJsonData('team_history.json', teamHistoryData);
+  saveJsonData('schedule.json', scheduleData, req);
+  saveJsonData('match_history.json', matchHistoryData, req);
+  saveJsonData('team_history.json', teamHistoryData, req);
 
   console.log('Processed next matches and updated history.');
 }

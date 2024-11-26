@@ -1,39 +1,50 @@
-const fs = require('fs');
-
-const { loadJsonData, saveJsonData } = require('../utils/json_helpers');
-const teamsFilePath = '../data/teams.json';
-const teamNamesFilePath = '../data/team_names.json';
+const { loadJsonData, saveJsonData, loadJsonDataFromPath } = require('../utils/json_helpers');
+const teamsFilePath = 'teams.json';
+const teamNamesFilePath = '../startup/startup_data/team_names.json';
 
 let teamsData;
 
-if (!fs.existsSync(teamsFilePath)) {
-  console.log('teams.json not found. Generating from team_names.json...');
+function initializeTeams(req = null) {
+  const existingTeamsData = loadJsonData(teamsFilePath, req);
 
-  const teamNamesData = loadJsonData(teamNamesFilePath);
-  if (!teamNamesData) {
-    process.exit(1);
+  if (!existingTeamsData.length) {
+    console.log('teams.json not found. Generating from team_names.json...');
+
+    const teamNamesData = loadJsonDataFromPath(teamNamesFilePath);
+    if (!teamNamesData) {
+      process.exit(1);
+    }
+
+    teamsData = teamNamesData.map((sport) => ({
+      sport: sport.sport,
+      teams: sport.teams.map((teamName) => ({
+        name: teamName,
+        speed: 0,
+        agility: 0,
+        attack: 0,
+        defense: 0,
+        overall: 0,
+        randomized: false,
+      })),
+    }));
+
+    saveJsonData(teamsFilePath, teamsData, req);
+    console.log('teams.json has been generated.');
+  } else {
+    teamsData = loadJsonData(teamsFilePath, req);
+    if (!teamsData) {
+      process.exit(1);
+    }
   }
 
-  teamsData = teamNamesData.map((sport) => ({
-    sport: sport.sport,
-    teams: sport.teams.map((teamName) => ({
-      name: teamName,
-      speed: 0,
-      agility: 0,
-      attack: 0,
-      defense: 0,
-      overall: 0,
-      randomized: false,
-    })),
-  }));
+  teamsData.forEach((sport) => {
+    sport.teams.forEach((team) => {
+      randomizeStats(team);
+    });
+  });
 
-  saveJsonData(teamsFilePath, teamsData);
-  console.log('teams.json has been generated.');
-} else {
-  teamsData = loadJsonData(teamsFilePath);
-  if (!teamsData) {
-    process.exit(1);
-  }
+  saveJsonData(teamsFilePath, teamsData, req);
+  console.log('Teams stats have been randomized and updated.');
 }
 
 function randomizeStats(team) {
@@ -45,17 +56,6 @@ function randomizeStats(team) {
     team.overall = Math.round((team.speed + team.agility + team.attack + team.defense) / 4);
     team.randomized = true;
   }
-}
-
-function initializeTeams() {
-  teamsData.forEach((sport) => {
-    sport.teams.forEach((team) => {
-      randomizeStats(team);
-    });
-  });
-
-  saveJsonData(teamsFilePath, teamsData);
-  console.log('Teams stats have been randomized and updated.');
 }
 
 module.exports = initializeTeams;

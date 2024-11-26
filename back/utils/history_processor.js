@@ -1,8 +1,8 @@
 const { loadJsonData } = require('./json_helpers');
 
-const getTeamMatchHistory = (teamName) => {
-  const teamHistory = loadJsonData('team_history.json');
-  const matchHistory = loadJsonData('match_history.json');
+const getTeamMatchHistory = (teamName, req) => {
+  const teamHistory = loadJsonData('team_history.json', req);
+  const matchHistory = loadJsonData('match_history.json', req);
 
   if (!teamHistory[teamName]) {
     return { error: 'Team not found' };

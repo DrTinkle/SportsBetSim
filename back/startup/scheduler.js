@@ -5,8 +5,8 @@ let matchCounter = 1;
 let teamHistory = [];
 let matchHistory = [];
 
-function generateSchedule(iterations = 1) {
-  const teamsData = loadJsonData('teams.json');
+function generateSchedule(iterations = 1, req) {
+  const teamsData = loadJsonData('teams.json', req);
   let scheduleData = {};
   let matchHistoryData = {};
 
@@ -30,9 +30,9 @@ function generateSchedule(iterations = 1) {
     };
   });
 
-  randomizePastMatchResults(matchHistoryData);
+  randomizePastMatchResults(matchHistoryData, req);
 
-  saveJsonData('schedule.json', scheduleData);
+  saveJsonData('schedule.json', scheduleData, req);
   console.log('schedule.json saved');
 }
 
@@ -89,8 +89,8 @@ function fisherYatesShuffle(array) {
   return array;
 }
 
-function randomizePastMatchResults(scheduleData) {
-  clearHistories();
+function randomizePastMatchResults(scheduleData, req) {
+  clearHistories(req);
 
   Object.entries(scheduleData).forEach(([sport, sportData]) => {
     if (sportData.matchups) {
@@ -139,32 +139,32 @@ function randomizePastMatchResults(scheduleData) {
     team.pointsPerMatch = totalMatches ? (team.totalPoints / totalMatches).toFixed(2) : 0;
   });
 
-  saveJsonData('match_history.json', scheduleData);
-  saveJsonData('team_history.json', teamHistory);
+  saveJsonData('match_history.json', scheduleData, req);
+  saveJsonData('team_history.json', teamHistory, req);
   console.log('match_history.json and team_history.json saved');
 }
 
-function clearHistories() {
+function clearHistories(req) {
   matchHistory = [];
-  saveJsonData('match_history.json', matchHistory);
+  saveJsonData('match_history.json', matchHistory, req);
 
   teamHistory = {};
-  saveJsonData('team_history.json', teamHistory);
+  saveJsonData('team_history.json', teamHistory, req);
 
   console.log('Team and match history cleared.');
 
   let tickets = [];
   let ticketArchive = [];
 
-  saveJsonData('tickets.json', tickets);
-  saveJsonData('ticket_archive.json', ticketArchive);
+  saveJsonData('tickets.json', tickets, req);
+  saveJsonData('ticket_archive.json', ticketArchive, req);
 
   console.log('Betting tickets and archive cleared.');
 }
 
-function initializeSchedule() {
+function initializeSchedule(req) {
   try {
-    generateSchedule(2);
+    generateSchedule(2, req);
   } catch (error) {
     console.error(error.message);
   }
