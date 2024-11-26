@@ -1,3 +1,4 @@
+import './fetchInterceptor';
 import './styles.css';
 import GameManagerParent from './components/GameManagerParent';
 import TeamList from './components/TeamList';
