@@ -3,9 +3,9 @@ const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 
-require('./startup/team_randomizer');
-require('./startup/scheduler');
-require('./startup/bank_initializer');
+const initializeBank = require('./startup/bank_initializer');
+const initializeSchedule = require('./startup/scheduler');
+const initializeTeams = require('./startup/team_randomizer');
 
 const { getTeamMatchHistory } = require('./utils/history_processor');
 const { getNextMatchups } = require('./utils/next_matchups');
@@ -45,6 +45,31 @@ function saveJsonData(filePath, data) {
     console.error(`Error saving JSON to ${filePath}:`, error);
   }
 }
+
+function initializeAllData() {
+  console.log('Reinitializing all data...');
+  initializeBank();
+  initializeTeams();
+  initializeSchedule();
+  console.log('All data has been reinitialized.');
+}
+
+initializeAllData();
+
+app.use((req, res, next) => {
+  console.log('Resetting data for new session...');
+  initializeAllData();
+  next();
+});
+
+app.post('/api/reset', (req, res) => {
+  try {
+    initializeAllData();
+    res.json({ success: true, message: 'All data has been reinitialized.' });
+  } catch (error) {
+    res.status(500).json({ success: false, error: 'Failed to reinitialize data.' });
+  }
+});
 
 app.get('/api/teamNames', (req, res) => {
   try {

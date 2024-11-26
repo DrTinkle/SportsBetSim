@@ -47,11 +47,15 @@ function randomizeStats(team) {
   }
 }
 
-teamsData.forEach((sport) => {
-  sport.teams.forEach((team) => {
-    randomizeStats(team);
+function initializeTeams() {
+  teamsData.forEach((sport) => {
+    sport.teams.forEach((team) => {
+      randomizeStats(team);
+    });
   });
-});
 
-saveJsonData(teamsFilePath, teamsData);
-console.log('Teams stats have been randomized and updated.');
+  saveJsonData(teamsFilePath, teamsData);
+  console.log('Teams stats have been randomized and updated.');
+}
+
+module.exports = initializeTeams;

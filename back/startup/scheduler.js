@@ -162,8 +162,12 @@ function clearHistories() {
   console.log('Betting tickets and archive cleared.');
 }
 
-try {
-  generateSchedule(2);
-} catch (error) {
-  console.error(error.message);
+function initializeSchedule() {
+  try {
+    generateSchedule(2);
+  } catch (error) {
+    console.error(error.message);
+  }
 }
+
+module.exports = initializeSchedule;

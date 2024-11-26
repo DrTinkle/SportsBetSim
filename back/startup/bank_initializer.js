@@ -25,4 +25,4 @@ function initializeBank() {
   }
 }
 
-initializeBank();
+module.exports = initializeBank;
