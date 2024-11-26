@@ -13,6 +13,9 @@ const { calculateOddsForMatchup } = require('./calculations/odds_calculator');
 const { processNextMatches } = require('./utils/match_processor');
 const { processBets } = require('./utils/bet_handler');
 
+const activeSessions = new Map();
+const SESSION_TIMEOUT = 10 * 60 * 1000;
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -56,9 +59,29 @@ function initializeAllData() {
 
 initializeAllData();
 
+function shouldResetSession(playerID) {
+  const lastActive = activeSessions.get(playerID);
+  const now = Date.now();
+
+  if (!lastActive || now - lastActive > SESSION_TIMEOUT) {
+    activeSessions.set(playerID, now);
+    return true;
+  }
+
+  return false;
+}
+
 app.use((req, res, next) => {
-  console.log('Resetting data for new session...');
-  initializeAllData();
+  const playerID = req.headers['x-player-id'] || 'anonymous';
+  console.log(`Received request from player: ${playerID}`);
+
+  if (shouldResetSession(playerID)) {
+    console.log(`Resetting data for player: ${playerID}`);
+    initializeAllData();
+  } else {
+    console.log(`No reset needed for player: ${playerID}`);
+  }
+
   next();
 });
 

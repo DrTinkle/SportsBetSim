@@ -77,7 +77,6 @@ const BettingParent = ({ matchupsCache, oddsCache, updateBankData }) => {
         isOpen={isArchiveModalOpen}
         onClose={() => setIsArchiveModalOpen(false)}
       />
-      ;
     </div>
   );
 };
