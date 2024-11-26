@@ -12,7 +12,7 @@ const GameManagerParent = () => {
   const [isAccountModalOpen, setIsAccountModalOpen] = useState(false);
   const [isBackstoryModalOpen, setIsBackstoryModalOpen] = useState(true);
   const [bankData, setBankData] = useState({
-    balance: 1000,
+    balance: 2000,
     loans: [{ amount: 2000, interestRate: 10, daysRemaining: 30 }],
     rentDue: 500,
     daysRemaining: 7,
