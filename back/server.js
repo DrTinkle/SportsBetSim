@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const cors = require('cors');
 
 require('./startup/team_randomizer');
 require('./startup/scheduler');
@@ -14,6 +15,14 @@ const { processBets } = require('./utils/bet_handler');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+const corsOptions = {
+  origin: 'https://sportsbetsim-front.onrender.com', // Your frontend domain
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Allow cookies if necessary
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
