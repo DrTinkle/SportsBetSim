@@ -1,5 +1,6 @@
-![Main screenshot](./screenshots/screenshot1.jpg)
-
+<div align="center">
+  <img src="./public/images/title_logo.png" alt="Title Logo" width="300" />
+</div>
 
 # SportsBetSim - A Betting Game Simulator (Work in Progress)
 
@@ -13,6 +14,7 @@ SportsBetSim is a browser-based **sports betting simulator game** built with **R
 - **Team Profiles**: Lists of teams for each sport, including a "team profile" view that displays a team’s match history and statistics.
 - **Odds Calculation**: Calculates odds for each upcoming matchup based on match history and team stats.
 - **Daily Match Processing**: Upon moving to the "Next Day", match results are calculated and weighted with team stats, matches are archived to history, and team stats are updated. Odds are recalculated for future matchups.
+- **Persistent Player Data**: Each player's game state, including teams, match history, and bank status, is stored separately using a unique `playerID` retrieved from cookies. This ensures isolated data files and independent gameplay for each player.
 
 ### Betting System
 - **Betting Grid and Odds Calculation**: Allows users to view upcoming matches and select odds for betting. 
