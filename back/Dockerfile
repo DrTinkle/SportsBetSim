@@ -5,6 +5,8 @@ RUN adduser -D app
 USER app
 WORKDIR /app
 
+RUN mkdir -p /app/data
+
 COPY --chown=app:app package*.json ./
 RUN npm install
 

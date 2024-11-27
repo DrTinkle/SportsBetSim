@@ -1,11 +1,5 @@
-# Ignore all JSON data files except team_names.json
-data/match_history.json
-data/schedule.json
-data/team_history.json
-data/teams.json
-data/bank.json
-data/ticket_archive.json
-data/tickets.json
+# Ignore all JSON data
+back/data/*.json
 
 # Ignore node_modules
 node_modules
