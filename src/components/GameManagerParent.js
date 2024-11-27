@@ -11,12 +11,7 @@ const GameManagerParent = () => {
   const [refreshKey, setRefreshKey] = useState(0);
   const [isAccountModalOpen, setIsAccountModalOpen] = useState(false);
   const [isBackstoryModalOpen, setIsBackstoryModalOpen] = useState(true);
-  const [bankData, setBankData] = useState({
-    balance: 2000,
-    loans: [{ amount: 2000, interestRate: 10, daysRemaining: 30 }],
-    rentDue: 500,
-    daysRemaining: 7,
-  });
+  const [bankData, setBankData] = useState(undefined);
 
   useEffect(() => {
     const fetchNextMatchupsAndOdds = async () => {
@@ -70,12 +65,16 @@ const GameManagerParent = () => {
         method: 'GET',
         credentials: 'include',
       });
-      const updatedBankData = await response.json();
-      setBankData(updatedBankData);
+      const fetchedBankData = await response.json();
+      setBankData(fetchedBankData);
     } catch (error) {
       console.error('Error fetching bank data:', error);
     }
   };
+
+  useEffect(() => {
+    updateBankData();
+  }, []);
 
   const handleProcessed = () => {
     setRefreshKey((prevKey) => prevKey + 1);
@@ -89,6 +88,10 @@ const GameManagerParent = () => {
   const closeBackstoryModal = () => {
     setIsBackstoryModalOpen(false);
   };
+
+  if (bankData === undefined) {
+    return <p>Loading bank data...</p>;
+  }
 
   return (
     <div className="game-manager">
