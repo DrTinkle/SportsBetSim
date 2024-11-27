@@ -18,7 +18,10 @@ const TicketManager = () => {
   const [flippedTickets, setFlippedTickets] = useState({});
 
   useEffect(() => {
-    fetch('/api/getTickets')
+    fetch('/api/getTickets', {
+      method: 'GET',
+      credentials: 'include',
+    })
       .then((response) => response.json())
       .then((data) => setSubmittedTickets(data))
       .catch((error) => console.error('Error fetching tickets:', error));
@@ -37,7 +40,10 @@ const TicketManager = () => {
   };
 
   const handleTrashTicket = (ticketId) => {
-    fetch(`/api/tickets/${ticketId}`, { method: 'DELETE' })
+    fetch(`/api/tickets/${ticketId}`, {
+      method: 'DELETE',
+      credentials: 'include',
+    })
       .then(() => {
         setSubmittedTickets((prev) => prev.filter((ticket) => ticket.ticketId !== ticketId));
       })
@@ -45,7 +51,10 @@ const TicketManager = () => {
   };
 
   const handleArchiveTicket = (ticketId) => {
-    fetch(`/api/tickets/${ticketId}/archive`, { method: 'POST' })
+    fetch(`/api/tickets/${ticketId}/archive`, {
+      method: 'POST',
+      credentials: 'include',
+    })
       .then(() => {
         setSubmittedTickets((prev) => prev.filter((ticket) => ticket.ticketId !== ticketId));
       })

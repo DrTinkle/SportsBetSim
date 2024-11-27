@@ -10,7 +10,7 @@ function App() {
       try {
         const response = await fetch('/api/initialize-player', {
           method: 'POST',
-          credentials: 'include', // Include cookies
+          credentials: 'include',
         });
 
         if (response.ok) {

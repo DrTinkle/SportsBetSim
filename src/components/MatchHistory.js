@@ -8,7 +8,10 @@ const MatchHistory = ({ refreshKey }) => {
 
   const fetchProcessedMatches = async () => {
     try {
-      const response = await fetch('/api/recentProcessedMatches');
+      const response = await fetch('/api/recentProcessedMatches', {
+        method: 'GET',
+        credentials: 'include',
+      });
       const data = await response.json();
       setHistory(data);
       setLoading(false);

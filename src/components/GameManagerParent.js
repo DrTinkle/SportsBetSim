@@ -26,7 +26,10 @@ const GameManagerParent = () => {
 
       try {
         for (const sport of sports) {
-          const response = await fetch(`/api/nextMatchups/${sport}`);
+          const response = await fetch(`/api/nextMatchups/${sport}`, {
+            method: 'GET',
+            credentials: 'include',
+          });
           const matchData = await response.json();
           fetchedMatchups[sport] = matchData;
 
@@ -34,7 +37,11 @@ const GameManagerParent = () => {
             const match = matchData[i];
             const isNextMatch = i === 0;
             const oddsResponse = await fetch(
-              `/api/odds?teamA=${match.teamA}&teamB=${match.teamB}&isNextMatch=${isNextMatch}&sport=${sport}`
+              `/api/odds?teamA=${match.teamA}&teamB=${match.teamB}&isNextMatch=${isNextMatch}&sport=${sport}`,
+              {
+                method: 'GET',
+                credentials: 'include',
+              }
             );
             const oddsData = await oddsResponse.json();
 
@@ -59,7 +66,10 @@ const GameManagerParent = () => {
 
   const updateBankData = async () => {
     try {
-      const response = await fetch('/api/bank');
+      const response = await fetch('/api/bank', {
+        method: 'GET',
+        credentials: 'include',
+      });
       const updatedBankData = await response.json();
       setBankData(updatedBankData);
     } catch (error) {

@@ -67,7 +67,10 @@ const BetTicket = ({ selectedBets, finalizeTicket, clearTicket, updateBankData }
   const handleFinalizeTicket = async () => {
     const totalCost = betAmount * totalLines;
     try {
-      const balanceResponse = await fetch('/api/bank');
+      const balanceResponse = await fetch('/api/bank', {
+        method: 'GET',
+        credentials: 'include',
+      });
       const balanceData = await balanceResponse.json();
       if (balanceData.balance === undefined) {
         setModalMessage('Failed to retrieve account balance.');
@@ -85,6 +88,7 @@ const BetTicket = ({ selectedBets, finalizeTicket, clearTicket, updateBankData }
 
       const adjustBalanceResponse = await fetch('/api/bank/adjust-balance', {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -115,6 +119,7 @@ const BetTicket = ({ selectedBets, finalizeTicket, clearTicket, updateBankData }
 
       const ticketResponse = await fetch('/api/saveTicket', {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
         },

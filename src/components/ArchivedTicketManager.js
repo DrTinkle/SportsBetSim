@@ -18,7 +18,10 @@ const ArchivedTicketManager = () => {
   const [flippedTickets, setFlippedTickets] = useState({});
 
   useEffect(() => {
-    fetch('/api/tickets/archived')
+    fetch('/api/tickets/archived', {
+      method: 'GET',
+      credentials: 'include',
+    })
       .then((response) => response.json())
       .then((data) => setArchivedTickets(data))
       .catch((error) => console.error('Error fetching archived tickets:', error));
@@ -32,7 +35,10 @@ const ArchivedTicketManager = () => {
   };
 
   const handleDeleteArchivedTicket = (ticketId) => {
-    fetch(`/api/tickets/archived/${ticketId}`, { method: 'DELETE' })
+    fetch(`/api/tickets/archived/${ticketId}`, {
+      method: 'DELETE',
+      credentials: 'include',
+    })
       .then(() => {
         setArchivedTickets((prev) => prev.filter((ticket) => ticket.ticketId !== ticketId));
       })

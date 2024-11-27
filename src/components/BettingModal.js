@@ -5,7 +5,10 @@ const BettingModal = ({ isOpen, onClose, children, refreshBalanceTrigger }) => {
   const [bankBalance, setBankBalance] = useState(0);
 
   const fetchBankBalance = () => {
-    fetch('/api/bank')
+    fetch('/api/bank', {
+      method: 'GET',
+      credentials: 'include', // Ensure cookies are included
+    })
       .then((response) => response.json())
       .then((data) => setBankBalance(data.balance))
       .catch((error) => console.error('Error fetching bank balance:', error));

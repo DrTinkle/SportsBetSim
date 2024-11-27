@@ -13,7 +13,10 @@ const TeamList = () => {
   useEffect(() => {
     const fetchTeamNames = async () => {
       try {
-        const response = await fetch('/api/teamNames');
+        const response = await fetch('/api/teamNames', {
+          method: 'GET',
+          credentials: 'include',
+        });
         const data = await response.json();
         setTeamNames(data);
         setLoading(false);
@@ -39,7 +42,10 @@ const TeamList = () => {
     setShowModal(true);
 
     try {
-      const response = await fetch(`/api/team-match-history/${team}`);
+      const response = await fetch(`/api/team-match-history/${team}`, {
+        method: 'GET',
+        credentials: 'include',
+      });
       const data = await response.json();
       setMatchHistory(data.matches || []);
       setTeamStats(data.stats || null);

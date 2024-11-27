@@ -20,9 +20,9 @@ const ProcessNextMatchesButton = ({ onProcessed }) => {
     }, 200);
 
     try {
-      // Step 1: Process Next Matches
       const nextMatchesResponse = await fetch('/api/processNextMatches', {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -33,9 +33,9 @@ const ProcessNextMatchesButton = ({ onProcessed }) => {
         throw new Error(nextMatchesData.error || 'Failed to process next matches');
       }
 
-      // Step 2: Process Bets
       const betsResponse = await fetch('/api/processBets', {
         method: 'GET',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -46,13 +46,11 @@ const ProcessNextMatchesButton = ({ onProcessed }) => {
         throw new Error(betsData.error || 'Failed to process bets');
       }
 
-      // Step 3: Trigger parent callback
       onProcessed();
     } catch (error) {
       setMessage(`Error: ${error.message}`);
     }
 
-    // Finalize progress
     setTimeout(() => {
       clearInterval(progressInterval);
       setLoading(false);
