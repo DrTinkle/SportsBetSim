@@ -34,13 +34,14 @@ app.use((req, res, next) => {
     res.cookie('playerID', newPlayerID, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
-      maxAge: 24 * 60 * 60 * 1000, // 1 day
-      sameSite: 'Strict',
+      maxAge: 24 * 60 * 60 * 1000,
+      sameSite: 'None',
     });
     req.playerID = newPlayerID;
     console.log(`Assigned new playerID: ${newPlayerID}`);
   } else {
     req.playerID = req.cookies.playerID;
+    console.log(`Existing playerID: ${req.playerID}`);
   }
   next();
 });
