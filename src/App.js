@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
-import './fetchInterceptor';
 import './styles.css';
 import GameManagerParent from './components/GameManagerParent';
 import TeamList from './components/TeamList';
+
+// Uncomment this line before deploying!
+import './fetchInterceptor';
 
 function App() {
   useEffect(() => {

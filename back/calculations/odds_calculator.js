@@ -63,10 +63,10 @@ async function calculateOddsForMatchup(teamA, teamB, isNextMatch = false, sport 
   const overallDrawRateTeamA = overallTeamADraws / (overallTotalGamesTeamA || 1);
   const overallDrawRateTeamB = overallTeamBDraws / (overallTotalGamesTeamB || 1);
 
-  const headToHeadWeight = 0.35;
-  const overallPerformanceWeight = 0.35;
-  const statComparisonWeight = 0.15;
-  const avgScoreWeight = 0.15;
+  const headToHeadWeight = 0.02;
+  const overallPerformanceWeight = 0.92;
+  const statComparisonWeight = 0.04;
+  const avgScoreWeight = 0.02;
 
   const rawProbabilityTeamA =
     headToHeadWeight * headToHeadWinRateTeamA +
@@ -83,19 +83,29 @@ async function calculateOddsForMatchup(teamA, teamB, isNextMatch = false, sport 
   const rawProbabilityDraw =
     headToHeadWeight * drawRate +
     (overallPerformanceWeight * (overallDrawRateTeamA + overallDrawRateTeamB)) / 2 +
-    statComparisonWeight * 0.1 +
-    avgScoreWeight * 0.1;
+    statComparisonWeight * (1 - Math.abs(statComparisonA - statComparisonB)) +
+    avgScoreWeight * (1 - Math.abs(avgHeadToHeadScoreTeamA - avgHeadToHeadScoreTeamB));
 
   const totalRaw = rawProbabilityTeamA + rawProbabilityTeamB + rawProbabilityDraw;
 
   if (totalRaw > 0) {
-    let oddsTeamA = rawProbabilityTeamA / totalRaw;
-    let oddsTeamB = rawProbabilityTeamB / totalRaw;
-    let oddsDraw = rawProbabilityDraw / totalRaw;
+    const bookmakerMargin = 1.1;
 
-    oddsTeamA = oddsTeamA > 0 ? (1 / oddsTeamA).toFixed(2) : null;
-    oddsTeamB = oddsTeamB > 0 ? (1 / oddsTeamB).toFixed(2) : null;
-    oddsDraw = oddsDraw > 0 ? (1 / oddsDraw).toFixed(2) : null;
+    const totalProbability = rawProbabilityTeamA + rawProbabilityDraw + rawProbabilityTeamB;
+    const probTeamA = rawProbabilityTeamA / totalProbability;
+    const probDraw = rawProbabilityDraw / totalProbability;
+    const probTeamB = rawProbabilityTeamB / totalProbability;
+
+    const adjustedProbTeamA = (probTeamA / (probTeamA + probDraw + probTeamB)) * bookmakerMargin;
+    const adjustedProbDraw = (probDraw / (probTeamA + probDraw + probTeamB)) * bookmakerMargin;
+    const adjustedProbTeamB = (probTeamB / (probTeamA + probDraw + probTeamB)) * bookmakerMargin;
+
+    const drawExtraMargin = 0.9;
+
+    let oddsTeamA = adjustedProbTeamA > 0 ? (1 / adjustedProbTeamA).toFixed(2) : null;
+    let oddsTeamB = adjustedProbTeamB > 0 ? (1 / adjustedProbTeamB).toFixed(2) : null;
+    let oddsDraw =
+      adjustedProbDraw > 0 ? ((1 / adjustedProbDraw) * drawExtraMargin).toFixed(2) : null;
 
     const odds = {
       teamA,
