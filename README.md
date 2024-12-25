@@ -4,7 +4,9 @@
 
 # SportsBetSim - Sports Betting Simulator (Work in Progress)
 
-SportsBetSim is a browser-based **sports betting simulator game** built with **React**. Currently it generates random sports teams, calculates match results, and allows users to place bets on upcoming games. This project is currently in development, and features are still being added and refined. [Give the prototype a try here](https://sportsbetsim-front.onrender.com/) (It might take a few seconds to generate the initial data.)
+SportsBetSim is a browser-based **sports betting simulator game** built with **React**. Currently it generates random sports teams, calculates match results, and allows users to place bets on upcoming games. This project is currently in development, and features are still being added and refined. [Give the prototype a try here](https://sportsbetsim-front.onrender.com/) 
+
+*Note: The project is hosted on Render, and the server winds down after periods of inactivity. As a result, it may take a few seconds to start up when accessed. If you notice any missing upcoming matchups, please wait a moment and refresh the page until all data loads properly.*
 
 ## Features
 
